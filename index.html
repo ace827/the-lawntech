@@ -95,6 +95,14 @@ nav.scrolled{box-shadow:0 2px 24px rgba(11,26,12,.10)}
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;border-radius:6px}
 .hamburger:hover{background:var(--warm)}
 @media(max-width:920px){.nav-links{display:none}.hamburger{display:flex}}
+@media(max-width:600px){
+  .nav-brand{flex:1}
+  .brand-name{font-size:16px}
+  .brand-city{font-size:11px}
+  .nav-icon{width:36px;height:36px}
+  .nav-call-text{display:none}
+  .nav-call-btn{padding:9px 12px !important}
+}
 
 /* MOBILE MENU */
 .mobile-menu{display:none;position:fixed;inset:0;background:var(--white);z-index:200;flex-direction:column;padding:0}
@@ -555,9 +563,9 @@ footer{background:var(--ink);color:rgba(255,255,255,.65)}
         <a href="#contact">Contact</a>
       </div>
       <div class="nav-actions">
-        <a href="tel:3057669743" class="btn btn-primary" style="padding:10px 22px;font-size:14px">
+        <a href="tel:3057669743" class="btn btn-primary nav-call-btn" style="padding:10px 22px;font-size:14px">
           <svg width="15" height="15"><use href="#i-phone"/></svg>
-          (305) 766-9743
+          <span class="nav-call-text">(305) 766-9743</span>
         </a>
         <button class="hamburger" id="hamburger" aria-label="Open menu">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
