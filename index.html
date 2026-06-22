@@ -398,13 +398,16 @@ footer{background:var(--ink);color:rgba(255,255,255,.65)}
   /* Hero */
   .hero{min-height:auto}
   .hero-wrap{padding:60px 0 48px}
-  .hero h1{font-size:34px;letter-spacing:-.01em}
-  .hero-desc{font-size:15px;margin-bottom:24px}
+  .hero-layout{display:flex;flex-direction:column;gap:32px;padding:0 16px}
+  .hero h1{font-size:34px;letter-spacing:-.01em;text-align:left}
+  .hero-kicker{font-size:12px}
+  .hero-desc{font-size:15px;margin-bottom:24px;max-width:100%}
   .hero-ctas{flex-direction:column;gap:10px}
   .hero-ctas .btn{width:100%;justify-content:center}
-  .hero-proof{gap:12px}
+  .hero-proof{gap:10px;flex-wrap:wrap}
   .proof-divider{display:none}
-  .hero-card{margin-top:32px}
+  .hero-card{width:100%;max-width:100%}
+  .hero-card-cta{margin:16px 20px 20px}
   .hero-scroll{display:none}
 
   /* Trust bar */
