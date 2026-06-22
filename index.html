@@ -3,386 +3,477 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The LawnTech | Lawn Care Service | Pembroke Pines, FL</title>
-<meta name="description" content="The LawnTech — Professional lawn care in Pembroke Pines, FL. 5-star rated, reliable, and fairly priced. Call (305) 766-9743 for a free quote.">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>The LawnTech | Premier Lawn Care | Pembroke Pines, FL</title>
+<meta name="description" content="The LawnTech — 5-star rated lawn care in Pembroke Pines, FL. Professional, reliable, and fairly priced. Call (305) 766-9743 for a free quote.">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink:    #0d1f0e;
-  --ink2:   #132614;
-  --ink3:   #1a3019;
-  --green:  #2d8c1e;
-  --green2: #3aac26;
-  --green3: #236d17;
-  --off:    #f5faf4;
-  --warm:   #edf5eb;
-  --border: #d4e8cf;
-  --mid:    #5a7a56;
-  --dark:   #2b4428;
-  --card:   #eef6ec;
-  --white:  #ffffff;
-  --gold:   #f0a500;
+  --ink:     #0b1a0c;
+  --ink2:    #112214;
+  --ink3:    #162c18;
+  --green:   #1e7e2f;
+  --green2:  #27a33e;
+  --green3:  #175c23;
+  --lime:    #6dbf4a;
+  --off:     #f4f9f2;
+  --warm:    #eaf3e6;
+  --border:  #d0e8c8;
+  --mid:     #52735a;
+  --dark:    #263d2a;
+  --card:    #edf5e8;
+  --white:   #ffffff;
+  --gold:    #f0b429;
+  --cream:   #fafdf8;
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);overflow-x:hidden}
-h1,h2,h3,h4,h5{font-family:'Raleway',sans-serif}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5,h6{font-family:'Raleway',sans-serif}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-svg{display:inline-block;vertical-align:middle}
 
-/* UTILITY */
-.container{max-width:1160px;margin:0 auto;padding:0 24px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:4px;font-family:'Raleway',sans-serif;font-weight:700;font-size:15px;letter-spacing:.04em;cursor:pointer;transition:all .2s;border:none}
-.btn-primary{background:var(--green);color:#fff}
-.btn-primary:hover{background:var(--green2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(45,140,30,.35)}
-.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
-.btn-outline:hover{background:rgba(255,255,255,.12)}
-.btn-dark{background:var(--ink);color:#fff}
-.btn-dark:hover{background:var(--ink2)}
-.section-label{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
-.section-title{font-family:'Raleway',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;color:var(--ink)}
-.section-sub{font-size:16px;line-height:1.7;color:var(--mid);margin-top:14px;max-width:560px}
-.tag{display:inline-block;background:var(--warm);color:var(--green3);font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;letter-spacing:.04em}
+/* ── LAYOUT ── */
+.container{max-width:1180px;margin:0 auto;padding:0 28px}
 
-/* REVEAL ANIMATIONS */
-.reveal,.rl,.rr{opacity:0;transition:opacity .65s ease, transform .65s ease}
-.reveal{transform:translateY(28px)}
-.rl{transform:translateX(-36px)}
-.rr{transform:translateX(36px)}
-.reveal.in,.rl.in,.rr.in{opacity:1;transform:none}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:6px;font-family:'Raleway',sans-serif;font-weight:700;font-size:15px;letter-spacing:.035em;cursor:pointer;transition:all .22s;border:none;white-space:nowrap}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 4px 18px rgba(30,126,47,.28)}
+.btn-primary:hover{background:var(--green2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(30,126,47,.38)}
+.btn-outline-white{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn-outline-green{background:transparent;color:var(--green);border:2px solid var(--green)}
+.btn-outline-green:hover{background:var(--green);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.15)}
 
-/* TOP BAR */
-.topbar{background:var(--ink);color:rgba(255,255,255,.82);font-size:13px;padding:9px 0}
-.topbar .container{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.topbar-items{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.topbar-item{display:flex;align-items:center;gap:6px}
-.topbar-item svg{color:var(--green2);flex-shrink:0}
-.topbar-cta{background:var(--green);color:#fff;padding:7px 16px;border-radius:3px;font-weight:700;font-size:13px;font-family:'Raleway',sans-serif;white-space:nowrap;transition:background .2s}
-.topbar-cta:hover{background:var(--green2)}
+/* ── TYPE HELPERS ── */
+.eyebrow{font-family:'Raleway',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green)}
+.eyebrow-light{color:var(--lime)}
+.display-title{font-family:'Raleway',sans-serif;font-size:clamp(32px,4.8vw,60px);font-weight:900;line-height:1.07;color:var(--ink)}
+.section-title{font-family:'Raleway',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weight:800;line-height:1.12;color:var(--ink)}
+.body-lg{font-size:17px;line-height:1.72;color:var(--mid)}
+.body-md{font-size:15px;line-height:1.68;color:var(--mid)}
 
-/* NAV */
-nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
-.nav-brand{display:flex;align-items:center;gap:12px}
-.nav-logo-mark{width:40px;height:40px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.nav-logo-mark svg{color:#fff}
-.nav-name{font-family:'Raleway',sans-serif;font-weight:800;font-size:18px;color:var(--ink);line-height:1.1}
-.nav-city{font-size:12px;color:var(--mid);font-weight:400}
-.nav-links{display:flex;align-items:center;gap:28px}
-.nav-links a{font-size:14px;font-weight:600;color:var(--dark);transition:color .2s;font-family:'Raleway',sans-serif}
+/* ── REVEAL ANIMATIONS ── */
+.r-up,.r-left,.r-right,.r-fade{opacity:0;transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1)}
+.r-up{transform:translateY(34px)}
+.r-left{transform:translateX(-40px)}
+.r-right{transform:translateX(40px)}
+.r-fade{transform:scale(.97)}
+.r-up.in,.r-left.in,.r-right.in,.r-fade.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+
+/* ════════════════════════════
+   TOP BAR
+════════════════════════════ */
+.topbar{background:var(--ink);padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar-items{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.topbar-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.72)}
+.topbar-item svg{color:var(--lime);flex-shrink:0}
+.topbar-pill{background:var(--green);color:#fff;padding:6px 16px;border-radius:20px;font-weight:700;font-size:12.5px;font-family:'Raleway',sans-serif;letter-spacing:.04em;display:flex;align-items:center;gap:6px;transition:background .2s}
+.topbar-pill:hover{background:var(--green2)}
+
+/* ════════════════════════════
+   NAV
+════════════════════════════ */
+nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .25s}
+nav.scrolled{box-shadow:0 2px 24px rgba(11,26,12,.10)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-brand{display:flex;align-items:center;gap:13px}
+.nav-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--green) 0%,var(--green2) 100%);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(30,126,47,.30)}
+.nav-icon svg{color:#fff}
+.brand-name{font-family:'Raleway',sans-serif;font-weight:900;font-size:19px;color:var(--ink);line-height:1.1;letter-spacing:-.01em}
+.brand-city{font-size:11.5px;color:var(--mid);font-weight:500;letter-spacing:.02em}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-size:14px;font-weight:600;color:var(--dark);transition:color .18s;font-family:'Raleway',sans-serif;letter-spacing:.01em;position:relative}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:2px;background:var(--green);transition:width .2s}
 .nav-links a:hover{color:var(--green)}
-.nav-cta{display:flex;align-items:center;gap:12px}
-.hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px}
-.hamburger svg{color:var(--ink)}
-@media(max-width:900px){
-  .nav-links{display:none}
-  .hamburger{display:block}
-}
-.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--white);z-index:200;flex-direction:column;padding:32px 24px;gap:28px}
+.nav-links a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;border-radius:6px}
+.hamburger:hover{background:var(--warm)}
+@media(max-width:920px){.nav-links{display:none}.hamburger{display:flex}}
+
+/* MOBILE MENU */
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--white);z-index:200;flex-direction:column;padding:0}
 .mobile-menu.open{display:flex}
-.mobile-menu a{font-family:'Raleway',sans-serif;font-size:22px;font-weight:700;color:var(--ink);border-bottom:1px solid var(--border);padding-bottom:16px}
-.mobile-menu-close{align-self:flex-end;background:none;border:none;cursor:pointer;font-size:28px;color:var(--mid);margin-bottom:8px}
+.mobile-menu-header{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--border)}
+.mobile-menu-links{padding:12px 0;flex:1;overflow-y:auto}
+.mobile-menu-links a{display:block;padding:16px 28px;font-family:'Raleway',sans-serif;font-size:18px;font-weight:700;color:var(--ink);border-bottom:1px solid var(--border)}
+.mobile-menu-links a:hover{background:var(--warm);color:var(--green)}
+.mobile-menu-footer{padding:20px 28px}
+.mobile-close{background:none;border:none;cursor:pointer;font-size:26px;color:var(--mid)}
 
-/* HERO */
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
-.hero-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85');background-size:cover;background-position:center top}
-.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,28,10,.88) 0%,rgba(10,28,10,.65) 55%,rgba(10,28,10,.3) 100%)}
-.hero-content{position:relative;z-index:2;padding:80px 0 60px}
-.hero-grid{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:600;padding:8px 16px;border-radius:20px;margin-bottom:22px;backdrop-filter:blur(8px)}
-.hero-badge svg{color:var(--gold)}
-.hero h1{font-size:clamp(38px,5.5vw,68px);font-weight:900;color:#fff;line-height:1.08;margin-bottom:18px}
-.hero h1 span{color:var(--green2)}
-.hero-sub{font-size:18px;color:rgba(255,255,255,.8);line-height:1.65;margin-bottom:32px;max-width:520px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
-.hero-trust{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.hero-trust-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.75);font-size:14px}
-.hero-trust-item svg{color:var(--green2)}
-.hero-card{background:rgba(255,255,255,.97);border-radius:12px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
-.hero-card-title{font-family:'Raleway',sans-serif;font-size:17px;font-weight:800;color:var(--ink);margin-bottom:18px;padding-bottom:14px;border-bottom:2px solid var(--border)}
-.hero-card-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
-.hero-card-item:last-child{margin-bottom:0}
-.hero-card-icon{width:36px;height:36px;background:var(--warm);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.hero-card-icon svg{color:var(--green)}
-.hero-card-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mid);margin-bottom:2px}
-.hero-card-val{font-size:14px;font-weight:600;color:var(--ink);line-height:1.4}
-.hero-card-cta{width:100%;margin-top:18px;justify-content:center;font-size:15px}
-@media(max-width:960px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero-card{max-width:440px}
+/* ════════════════════════════
+   HERO
+════════════════════════════ */
+.hero{position:relative;min-height:95vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&q=90');background-size:cover;background-position:center}
+.hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,rgba(8,20,9,.92) 0%,rgba(8,20,9,.72) 50%,rgba(8,20,9,.35) 100%)}
+.hero-bg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:220px;background:linear-gradient(to top,rgba(11,26,12,.6),transparent)}
+.hero-wrap{position:relative;z-index:2;padding:100px 0 80px;width:100%}
+.hero-layout{display:grid;grid-template-columns:1fr 360px;gap:56px;align-items:center}
+
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(109,191,74,.15);border:1px solid rgba(109,191,74,.3);color:rgba(255,255,255,.9);font-size:13px;font-weight:600;padding:9px 18px;border-radius:30px;margin-bottom:24px;backdrop-filter:blur(10px);letter-spacing:.04em}
+.hero-kicker svg{color:var(--gold)}
+.hero h1{font-size:clamp(40px,5.8vw,72px);font-weight:900;color:#fff;line-height:1.04;margin-bottom:22px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--lime);position:relative}
+.hero-desc{font-size:18px;color:rgba(255,255,255,.78);line-height:1.68;margin-bottom:36px;max-width:520px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.hero-proof{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.proof-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.7);font-size:13.5px;font-weight:500}
+.proof-item svg{color:var(--lime);flex-shrink:0}
+.proof-divider{width:1px;height:24px;background:rgba(255,255,255,.2)}
+
+/* Hero card */
+.hero-card{background:rgba(255,255,255,.97);border-radius:16px;padding:0;overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.5)}
+.hero-card-header{background:linear-gradient(135deg,var(--green),var(--green2));padding:22px 26px;display:flex;align-items:center;gap:12px}
+.hero-card-header svg{color:rgba(255,255,255,.85)}
+.hero-card-header-text{font-family:'Raleway',sans-serif;font-weight:800;font-size:16px;color:#fff}
+.hero-card-header-sub{font-size:12px;color:rgba(255,255,255,.75);font-weight:500;margin-top:1px}
+.hero-card-body{padding:24px 26px}
+.hc-item{display:flex;align-items:flex-start;gap:13px;padding:12px 0;border-bottom:1px solid #f0f0f0}
+.hc-item:last-child{border-bottom:none;padding-bottom:0}
+.hc-icon{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:var(--warm)}
+.hc-icon svg{color:var(--green)}
+.hc-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#a0a0a0;margin-bottom:3px}
+.hc-val{font-size:14px;font-weight:600;color:var(--ink);line-height:1.4}
+.hero-card-cta{display:flex;margin:22px 26px 26px;background:var(--green);color:#fff;border-radius:8px;padding:14px;align-items:center;justify-content:center;gap:10px;font-family:'Raleway',sans-serif;font-weight:700;font-size:15px;transition:background .2s,transform .2s;box-shadow:0 4px 16px rgba(30,126,47,.3)}
+.hero-card-cta:hover{background:var(--green2);transform:translateY(-1px)}
+
+/* Hero scroll indicator */
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.45);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;z-index:2}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.4));animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(1)}50%{opacity:.9;transform:scaleY(1.2)}}
+
+@media(max-width:980px){
+  .hero-layout{grid-template-columns:1fr}
+  .hero-card{max-width:420px}
   .hero{min-height:auto}
+  .hero-wrap{padding:80px 0 60px}
 }
 
-/* STATS BAND */
-.stats-band{background:var(--green);padding:36px 0}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.stat-item{text-align:center}
-.stat-num{font-family:'Raleway',sans-serif;font-size:clamp(32px,4vw,48px);font-weight:900;color:#fff;line-height:1}
-.stat-label{font-size:14px;color:rgba(255,255,255,.8);margin-top:6px;font-weight:500}
-@media(max-width:700px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:28px}}
+/* ════════════════════════════
+   TRUST BAR
+════════════════════════════ */
+.trust-bar{background:var(--off);border-bottom:1px solid var(--border);padding:0}
+.trust-bar-inner{display:flex;align-items:stretch;overflow:hidden}
+.trust-bar-item{flex:1;display:flex;align-items:center;gap:14px;padding:22px 28px;border-right:1px solid var(--border);transition:background .2s}
+.trust-bar-item:last-child{border-right:none}
+.trust-bar-item:hover{background:var(--warm)}
+.trust-icon{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--green),var(--green2));display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 3px 12px rgba(30,126,47,.25)}
+.trust-icon svg{color:#fff}
+.trust-label{font-size:13px;font-weight:600;color:var(--ink);font-family:'Raleway',sans-serif;line-height:1.3}
+.trust-sub{font-size:12px;color:var(--mid);margin-top:2px}
+@media(max-width:800px){.trust-bar-inner{flex-wrap:wrap}.trust-bar-item{flex:0 0 50%;border-bottom:1px solid var(--border)}}
+@media(max-width:480px){.trust-bar-item{flex:0 0 100%}}
 
-/* HOW IT WORKS */
-.how{padding:88px 0;background:var(--off)}
-.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:52px}
-.how-step{position:relative;text-align:center;padding:32px 20px 28px}
-.how-step-num{width:52px;height:52px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Raleway',sans-serif;font-weight:900;font-size:22px;margin:0 auto 18px}
-.how-connector{position:absolute;top:52px;left:calc(50% + 26px);right:calc(-50% + 26px);height:2px;background:var(--border);z-index:0}
-.how-step:last-child .how-connector{display:none}
-.how-step-title{font-family:'Raleway',sans-serif;font-weight:800;font-size:17px;color:var(--ink);margin-bottom:8px}
-.how-step-desc{font-size:14px;color:var(--mid);line-height:1.6}
-@media(max-width:760px){.how-grid{grid-template-columns:1fr 1fr}.how-connector{display:none}}
-@media(max-width:500px){.how-grid{grid-template-columns:1fr}}
+/* ════════════════════════════
+   HOW IT WORKS
+════════════════════════════ */
+.how{padding:100px 0;background:var(--ink)}
+.how-header{text-align:center;margin-bottom:64px}
+.how-header .section-title{color:#fff}
+.how-header .body-lg{color:rgba(255,255,255,.6);margin:16px auto 0;max-width:520px}
+.how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.06);border-radius:16px;overflow:hidden}
+.how-step{padding:40px 28px;background:rgba(255,255,255,.03);position:relative;transition:background .25s}
+.how-step:hover{background:rgba(255,255,255,.07)}
+.how-step-num{font-family:'Raleway',sans-serif;font-size:64px;font-weight:900;color:rgba(109,191,74,.15);line-height:1;margin-bottom:16px;letter-spacing:-.03em}
+.how-step-icon{width:50px;height:50px;background:var(--green);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 4px 16px rgba(30,126,47,.4)}
+.how-step-icon svg{color:#fff}
+.how-step h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:18px;color:#fff;margin-bottom:10px}
+.how-step p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.65}
+.how-step-tag{display:inline-block;background:rgba(109,191,74,.15);color:var(--lime);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:12px}
+@media(max-width:820px){.how-steps{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.how-steps{grid-template-columns:1fr}}
 
-/* SERVICES */
-.services{padding:88px 0;background:var(--white)}
-.services-header{text-align:center;margin-bottom:52px}
-.services-header .section-sub{margin:14px auto 0}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.service-card{background:var(--card);border-radius:12px;padding:30px 26px;border:1px solid var(--border);transition:box-shadow .25s,transform .25s}
-.service-card:hover{box-shadow:0 12px 40px rgba(45,140,30,.12);transform:translateY(-3px)}
-.service-card-icon{width:52px;height:52px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.service-card-icon svg{color:#fff}
-.service-card h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:18px;color:var(--ink);margin-bottom:8px}
-.service-card p{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:14px}
-.service-card ul{list-style:none;display:flex;flex-direction:column;gap:6px}
-.service-card ul li{font-size:13px;color:var(--dark);display:flex;align-items:center;gap:7px}
-.service-card ul li svg{color:var(--green);flex-shrink:0}
-@media(max-width:860px){.services-grid{grid-template-columns:1fr 1fr}}
+/* ════════════════════════════
+   SERVICES
+════════════════════════════ */
+.services{padding:100px 0;background:var(--cream)}
+.services-header{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:60px}
+.services-header-right{display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-end}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:box-shadow .25s,transform .25s;position:relative}
+.svc-card:hover{box-shadow:0 16px 48px rgba(30,126,47,.14);transform:translateY(-4px)}
+.svc-card-img{height:200px;background-size:cover;background-position:center;position:relative}
+.svc-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(11,26,12,.7) 100%)}
+.svc-card-img-label{position:absolute;bottom:14px;left:16px;z-index:1;font-family:'Raleway',sans-serif;font-weight:800;font-size:17px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.svc-card-body{padding:22px}
+.svc-card p{font-size:14px;color:var(--mid);line-height:1.65;margin-bottom:16px}
+.svc-card-features{display:flex;flex-direction:column;gap:7px}
+.svc-card-features li{list-style:none;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--dark)}
+.svc-card-features li svg{color:var(--green);flex-shrink:0}
+@media(max-width:900px){.services-grid{grid-template-columns:1fr 1fr}.services-header{grid-template-columns:1fr}.services-header-right{align-items:flex-start}}
 @media(max-width:520px){.services-grid{grid-template-columns:1fr}}
 
-/* WHY US */
-.why{padding:88px 0;background:var(--warm)}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
-.why-col{border-radius:12px;padding:32px}
-.why-col-other{background:var(--white);border:1px solid var(--border)}
-.why-col-us{background:var(--ink);color:#fff}
-.why-col h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.why-col-other h3{color:var(--mid)}
-.why-col-us h3{color:#fff}
-.why-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
-.why-item:last-child{margin-bottom:0}
-.why-item-icon{flex-shrink:0;margin-top:2px}
-.why-item-text{font-size:15px;line-height:1.55}
-.why-col-other .why-item-text{color:var(--mid)}
-.why-col-us .why-item-text{color:rgba(255,255,255,.85)}
-@media(max-width:700px){.why-grid{grid-template-columns:1fr}}
+/* ════════════════════════════
+   FEATURE SPLIT (WHY)
+════════════════════════════ */
+.split{padding:100px 0;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.split-img-wrap{position:relative}
+.split-img{width:100%;height:520px;object-fit:cover;border-radius:16px;background-image:url('https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=900&q=85');background-size:cover;background-position:center}
+.split-img-accent{position:absolute;bottom:-24px;right:-24px;background:var(--green);border-radius:14px;padding:24px 28px;color:#fff;font-family:'Raleway',sans-serif;box-shadow:0 12px 36px rgba(30,126,47,.4)}
+.split-img-accent-num{font-size:40px;font-weight:900;line-height:1}
+.split-img-accent-label{font-size:13px;opacity:.8;font-weight:600;margin-top:4px}
+.split-img-badge{position:absolute;top:24px;left:24px;background:rgba(255,255,255,.95);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.split-img-badge svg{color:var(--gold)}
+.split-img-badge span{font-family:'Raleway',sans-serif;font-weight:800;font-size:15px;color:var(--ink)}
+.why-list{margin-top:28px;display:flex;flex-direction:column;gap:0}
+.why-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--border)}
+.why-item:last-child{border-bottom:none;padding-bottom:0}
+.why-num{font-family:'Raleway',sans-serif;font-weight:900;font-size:28px;color:var(--border);line-height:1;flex-shrink:0;min-width:32px}
+.why-item-content h4{font-family:'Raleway',sans-serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:5px}
+.why-item-content p{font-size:14px;color:var(--mid);line-height:1.6}
+@media(max-width:860px){.split-grid{grid-template-columns:1fr}.split-img{height:360px}.split-img-accent{bottom:-16px;right:16px}}
 
-/* ABOUT */
-.about{padding:88px 0;background:var(--white)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.about-img-wrap{position:relative;border-radius:12px;overflow:hidden}
-.about-img{width:100%;height:420px;object-fit:cover;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85');background-size:cover;background-position:center}
-.about-badge{position:absolute;bottom:20px;left:20px;background:var(--green);color:#fff;border-radius:8px;padding:14px 20px;font-family:'Raleway',sans-serif}
-.about-badge-num{font-size:32px;font-weight:900;line-height:1}
-.about-badge-label{font-size:12px;opacity:.85;font-weight:600;margin-top:2px}
-.about-checks{display:flex;flex-direction:column;gap:14px;margin-top:24px}
-.about-check{display:flex;align-items:flex-start;gap:12px}
-.about-check-icon{width:24px;height:24px;background:var(--warm);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.about-check-icon svg{color:var(--green)}
-.about-check-text{font-size:15px;color:var(--mid);line-height:1.6}
-@media(max-width:800px){.about-grid{grid-template-columns:1fr}.about-img{height:300px}}
+/* ════════════════════════════
+   ABOUT / STORY
+════════════════════════════ */
+.about{padding:100px 0;background:var(--off)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative}
+.about-img-main{grid-column:1/-1;height:300px;border-radius:14px;background-image:url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=900&q=85');background-size:cover;background-position:center}
+.about-img-b{height:190px;border-radius:12px;background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600&q=85');background-size:cover;background-position:center}
+.about-img-c{height:190px;border-radius:12px;background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=85');background-size:cover;background-position:center}
+.about-checks{margin-top:24px;display:flex;flex-direction:column;gap:15px}
+.about-check{display:flex;align-items:flex-start;gap:13px}
+.check-icon{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green2));display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;box-shadow:0 3px 10px rgba(30,126,47,.3)}
+.check-icon svg{color:#fff}
+.about-check p{font-size:15px;color:var(--mid);line-height:1.6}
+.about-check p strong{color:var(--ink);font-weight:600}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
 
-/* REVIEWS */
-.reviews{padding:88px 0;background:var(--ink)}
-.reviews-header{text-align:center;margin-bottom:52px}
-.reviews-header .section-label{color:var(--green2)}
+/* ════════════════════════════
+   REVIEWS
+════════════════════════════ */
+.reviews{padding:100px 0;background:var(--ink2);position:relative;overflow:hidden}
+.reviews::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(30,126,47,.15) 0%,transparent 70%);pointer-events:none}
+.reviews::after{content:'';position:absolute;bottom:-60px;left:-60px;width:300px;height:300px;background:radial-gradient(circle,rgba(30,126,47,.1) 0%,transparent 70%);pointer-events:none}
+.reviews-header{text-align:center;margin-bottom:56px}
 .reviews-header .section-title{color:#fff}
-.reviews-stars{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:16px}
-.reviews-stars svg{color:var(--gold)}
-.reviews-pullquote{background:rgba(255,255,255,.06);border-left:4px solid var(--green);border-radius:0 8px 8px 0;padding:24px 28px;margin-bottom:48px;max-width:740px;margin-left:auto;margin-right:auto}
-.reviews-pullquote p{font-size:18px;color:rgba(255,255,255,.9);font-style:italic;line-height:1.7}
-.reviews-pullquote cite{display:block;font-size:13px;color:var(--mid);margin-top:12px;font-style:normal;font-weight:600}
-.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.review-card{background:rgba(255,255,255,.06);border-radius:10px;padding:22px;border:1px solid rgba(255,255,255,.08)}
-.review-card-stars{display:flex;gap:3px;margin-bottom:10px}
-.review-card-stars svg{color:var(--gold)}
-.review-card-text{font-size:14px;color:rgba(255,255,255,.8);line-height:1.65;margin-bottom:14px}
-.review-card-author{font-size:13px;font-weight:600;color:rgba(255,255,255,.5)}
+.rating-display{display:flex;align-items:center;justify-content:center;gap:12px;margin:18px 0 8px}
+.rating-num{font-family:'Raleway',sans-serif;font-size:52px;font-weight:900;color:#fff;line-height:1}
+.rating-stars-col{display:flex;flex-direction:column;gap:5px}
+.rating-stars{display:flex;gap:4px}
+.rating-stars svg{color:var(--gold)}
+.rating-count{font-size:13px;color:rgba(255,255,255,.5);font-weight:600}
+.reviews-feature{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:30px 36px;margin-bottom:40px;position:relative;overflow:hidden}
+.reviews-feature::before{content:'"\201C"';position:absolute;top:-20px;left:20px;font-size:180px;color:rgba(109,191,74,.08);font-family:Georgia,serif;line-height:1}
+.reviews-feature p{font-size:20px;color:rgba(255,255,255,.88);font-style:italic;line-height:1.65;position:relative;z-index:1}
+.reviews-feature cite{display:block;font-style:normal;font-size:13px;color:rgba(255,255,255,.45);margin-top:16px;font-weight:600;position:relative;z-index:1}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px;transition:background .2s,transform .2s}
+.review-card:hover{background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.rc-stars{display:flex;gap:3px;margin-bottom:13px}
+.rc-stars svg{color:var(--gold)}
+.rc-text{font-size:14px;color:rgba(255,255,255,.78);line-height:1.68;margin-bottom:16px}
+.rc-author{display:flex;align-items:center;gap:10px}
+.rc-avatar{width:34px;height:34px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:'Raleway',sans-serif;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rc-name{font-size:13px;font-weight:600;color:rgba(255,255,255,.6)}
+.rc-source{font-size:11px;color:rgba(255,255,255,.3);margin-top:1px}
 @media(max-width:860px){.reviews-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.reviews-grid{grid-template-columns:1fr}}
 
-/* FAQ */
-.faq{padding:88px 0;background:var(--off)}
-.faq-header{text-align:center;margin-bottom:48px}
-.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.faq-item{background:var(--white);border-radius:8px;border:1px solid var(--border);overflow:hidden}
-.faq-q{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:20px 22px;text-align:left;font-family:'Raleway',sans-serif;font-weight:700;font-size:16px;color:var(--ink);gap:16px}
-.faq-q svg{color:var(--green);flex-shrink:0;transition:transform .3s}
-.faq-item.open .faq-q svg{transform:rotate(180deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
-.faq-a-inner{padding:0 22px 20px;font-size:15px;color:var(--mid);line-height:1.7}
-.faq-item.open .faq-a{max-height:300px}
+/* ════════════════════════════
+   FAQ
+════════════════════════════ */
+.faq{padding:100px 0;background:var(--cream)}
+.faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:72px;align-items:start}
+.faq-sticky{position:sticky;top:100px}
+.faq-sticky .section-title{margin-top:14px;margin-bottom:20px}
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:border-color .2s}
+.faq-item.open{border-color:var(--green)}
+.faq-btn{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:20px 24px;text-align:left;font-family:'Raleway',sans-serif;font-weight:700;font-size:15.5px;color:var(--ink);gap:16px;transition:color .2s}
+.faq-btn:hover{color:var(--green)}
+.faq-item.open .faq-btn{color:var(--green)}
+.faq-chevron{flex-shrink:0;transition:transform .3s;color:var(--mid)}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--green)}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-body-inner{padding:0 24px 20px;font-size:15px;color:var(--mid);line-height:1.72}
+.faq-item.open .faq-body{max-height:300px}
+@media(max-width:800px){.faq-layout{grid-template-columns:1fr}.faq-sticky{position:static}}
 
-/* SERVICE AREA */
-.area{padding:88px 0;background:var(--white)}
-.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:48px}
-.area-map-card{background:var(--card);border-radius:12px;padding:32px;border:1px solid var(--border);text-align:center}
-.area-map-svg{width:100%;max-width:320px;height:220px;margin:0 auto 16px}
-.area-map-pin{fill:var(--green)}
-.area-neighborhoods{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.area-nb-item{background:var(--card);border-radius:8px;padding:14px 16px;border:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-.area-nb-name{font-size:14px;font-weight:600;color:var(--ink)}
-.area-nb-time{font-size:12px;color:var(--green);font-weight:600;background:var(--warm);padding:3px 8px;border-radius:10px}
-@media(max-width:700px){.area-grid{grid-template-columns:1fr}.area-neighborhoods{grid-template-columns:1fr}}
+/* ════════════════════════════
+   SERVICE AREA
+════════════════════════════ */
+.area{padding:100px 0;background:var(--white)}
+.area-header{text-align:center;margin-bottom:56px}
+.area-header .section-title{margin-top:12px}
+.area-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.area-map-wrap{border-radius:16px;overflow:hidden;box-shadow:0 8px 40px rgba(11,26,12,.12);height:480px;border:1px solid var(--border)}
+.area-map-wrap iframe{width:100%;height:100%;border:none;display:block}
+.area-right h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:22px;color:var(--ink);margin-bottom:8px}
+.area-right p{font-size:15px;color:var(--mid);line-height:1.65;margin-bottom:24px}
+.area-cities{display:flex;flex-direction:column;gap:0}
+.area-city{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--border)}
+.area-city:last-child{border-bottom:none}
+.area-city svg{color:var(--green);flex-shrink:0}
+.area-city-name{font-size:15px;font-weight:600;color:var(--ink)}
+@media(max-width:860px){.area-layout{grid-template-columns:1fr}.area-map-wrap{height:360px}}
 
-/* CTA BAND */
-.cta-band{background:var(--green);padding:72px 0;text-align:center}
-.cta-band h2{font-family:'Raleway',sans-serif;font-size:clamp(26px,4vw,44px);font-weight:900;color:#fff;margin-bottom:10px}
-.cta-band .phone{font-family:'Raleway',sans-serif;font-size:clamp(38px,6vw,72px);font-weight:900;color:#fff;letter-spacing:-.01em;line-height:1;display:block;margin-bottom:12px}
-.cta-band p{color:rgba(255,255,255,.8);font-size:16px;margin-bottom:30px}
-.cta-band .btn-outline{font-size:16px;padding:16px 36px}
+/* ════════════════════════════
+   CTA BAND
+════════════════════════════ */
+.cta-band{padding:100px 0;position:relative;overflow:hidden}
+.cta-band-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=85');background-size:cover;background-position:center}
+.cta-band-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,20,9,.95) 0%,rgba(11,40,15,.85) 100%)}
+.cta-band-content{position:relative;z-index:2;text-align:center}
+.cta-band-content .eyebrow{color:var(--lime);margin-bottom:16px;display:block}
+.cta-band-content h2{font-family:'Raleway',sans-serif;font-size:clamp(28px,4.5vw,52px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px;letter-spacing:-.01em}
+.cta-band-phone{display:block;font-family:'Raleway',sans-serif;font-size:clamp(38px,6vw,68px);font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.1;margin:20px 0;text-decoration:none;transition:color .2s}
+.cta-band-phone:hover{color:var(--lime)}
+.cta-band-hours{color:rgba(255,255,255,.6);font-size:16px;margin-bottom:36px}
+.cta-band-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-/* CONTACT */
-.contact{padding:88px 0;background:var(--warm)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.hours-table{width:100%;border-collapse:collapse;margin-top:20px}
-.hours-table tr{border-bottom:1px solid var(--border)}
-.hours-table td{padding:10px 0;font-size:15px}
-.hours-table td:first-child{font-weight:600;color:var(--ink)}
-.hours-table td:last-child{color:var(--mid);text-align:right}
-.hours-table tr.today td{color:var(--green);font-weight:700}
-.contact-form{background:var(--white);border-radius:12px;padding:32px;border:1px solid var(--border)}
-.contact-form h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:20px;color:var(--ink);margin-bottom:6px}
-.contact-form p{font-size:14px;color:var(--mid);margin-bottom:22px}
+/* ════════════════════════════
+   CONTACT
+════════════════════════════ */
+.contact{padding:100px 0;background:var(--off)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.contact-info h2{font-family:'Raleway',sans-serif;font-weight:800;font-size:clamp(24px,3vw,36px);color:var(--ink);margin:12px 0 16px}
+.contact-details{margin-top:28px;display:flex;flex-direction:column;gap:16px}
+.cd-item{display:flex;gap:14px;align-items:flex-start}
+.cd-icon{width:42px;height:42px;background:var(--warm);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cd-icon svg{color:var(--green)}
+.cd-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mid);margin-bottom:3px}
+.cd-val{font-size:15px;font-weight:600;color:var(--ink);line-height:1.45}
+.hours-grid{margin-top:24px;display:flex;flex-direction:column;gap:0;background:var(--white);border-radius:10px;border:1px solid var(--border);overflow:hidden}
+.hg-row{display:flex;justify-content:space-between;align-items:center;padding:11px 18px;border-bottom:1px solid var(--border);font-size:14px}
+.hg-row:last-child{border-bottom:none}
+.hg-row .day{font-weight:600;color:var(--ink)}
+.hg-row .time{color:var(--mid)}
+.hg-row.closed .time{color:#d0330f}
+/* Form */
+.contact-form-wrap{background:var(--white);border-radius:16px;padding:36px;border:1px solid var(--border);box-shadow:0 4px 32px rgba(11,26,12,.06)}
+.contact-form-wrap h3{font-family:'Raleway',sans-serif;font-weight:800;font-size:22px;color:var(--ink);margin-bottom:6px}
+.contact-form-wrap>p{font-size:14px;color:var(--mid);margin-bottom:24px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-group{margin-bottom:16px}
-.form-group label{display:block;font-size:13px;font-weight:600;color:var(--dark);margin-bottom:6px}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:6px;font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);background:var(--off);transition:border-color .2s}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--green)}
-.form-group textarea{resize:vertical;min-height:90px}
-.form-submit{width:100%;justify-content:center;font-size:15px;padding:14px}
-@media(max-width:760px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+.form-group label{display:block;font-size:12.5px;font-weight:700;color:var(--dark);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 15px;border:1.5px solid var(--border);border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);background:var(--off);transition:border-color .2s,box-shadow .2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(30,126,47,.08)}
+.form-group textarea{resize:vertical;min-height:96px}
+.form-submit{width:100%;justify-content:center;font-size:15px;padding:15px}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
 
-/* FOOTER */
-footer{background:var(--ink2);color:rgba(255,255,255,.7);padding:56px 0 28px}
-.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
-.footer-brand .nav-logo-mark{width:48px;height:48px;border-radius:10px;margin-bottom:14px}
-.footer-brand .nav-logo-mark svg{color:#fff}
-.footer-brand-name{font-family:'Raleway',sans-serif;font-weight:900;font-size:22px;color:#fff;margin-bottom:4px}
-.footer-brand-sub{font-size:13px;margin-bottom:16px}
-.footer-brand p{font-size:14px;line-height:1.65;max-width:260px}
-.footer-col h4{font-family:'Raleway',sans-serif;font-weight:700;font-size:14px;color:#fff;margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
-.footer-col ul li a{font-size:14px;transition:color .2s}
+/* ════════════════════════════
+   FOOTER
+════════════════════════════ */
+footer{background:var(--ink);color:rgba(255,255,255,.65)}
+.footer-top{padding:64px 0 48px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px}
+.footer-brand-icon{width:52px;height:52px;background:var(--green);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:0 4px 16px rgba(30,126,47,.4)}
+.footer-brand-icon svg{color:#fff}
+.footer-brand-name{font-family:'Raleway',sans-serif;font-weight:900;font-size:22px;color:#fff;margin-bottom:3px}
+.footer-brand-tagline{font-size:13px;margin-bottom:16px;color:rgba(255,255,255,.45)}
+.footer-brand p{font-size:14px;line-height:1.7;max-width:260px}
+.footer-col h4{font-family:'Raleway',sans-serif;font-weight:700;font-size:13px;color:rgba(255,255,255,.9);margin-bottom:18px;text-transform:uppercase;letter-spacing:.1em}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{font-size:14px;transition:color .2s;display:flex;align-items:center;gap:6px}
 .footer-col ul li a:hover{color:#fff}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
-.footer-bottom a{color:rgba(255,255,255,.5);transition:color .2s}
-.footer-bottom a:hover{color:#fff}
-.footer-stars{display:flex;align-items:center;gap:5px}
-.footer-stars svg{color:var(--gold)}
+.footer-col ul li a svg{opacity:.5;flex-shrink:0}
+.footer-bottom{padding:20px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.footer-rating{display:flex;align-items:center;gap:6px}
+.footer-rating svg{color:var(--gold)}
 @media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+
+/* Utility */
+.text-green{color:var(--green)}
+.mt-4{margin-top:16px}.mt-6{margin-top:24px}.mt-8{margin-top:32px}
 </style>
 </head>
 <body>
 
-<!-- SVG SPRITE -->
+<!-- ═══ SVG SPRITE ═══ -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-  </symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
-  </symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-  </symbol>
-  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-  </symbol>
-  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="20 6 9 17 4 12"/>
-  </symbol>
-  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-  </symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-  </symbol>
-  <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-  </symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-  </symbol>
-  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M11 20A7 7 0 014 13c0-5.5 7-13 7-13s7 7.5 7 13a7 7 0 01-7 7z"/><path d="M11 20v-9M8 14l3-3 3 3"/>
-  </symbol>
-  <symbol id="i-droplet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
-  </symbol>
-  <symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="8" y="6" width="8" height="14" rx="4"/><path d="M8 10H4"/><path d="M20 10h-4"/><path d="M8 14H4"/><path d="M20 14h-4"/><path d="M10 6V4"/><path d="M14 6V4"/>
-  </symbol>
-  <symbol id="i-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M17 14l-5-10-5 10h10z"/><path d="M19 18l-7-14-7 14h14z"/><line x1="12" y1="22" x2="12" y2="18"/>
-  </symbol>
-  <symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>
-  </symbol>
-  <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="6 9 12 15 18 9"/>
-  </symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-  </symbol>
-  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
-  </symbol>
-  <symbol id="i-spray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M3 3h2v18H3z"/><path d="M7 7h10l2 5H5z"/><path d="M17 12v5"/><path d="M7 12v5"/><path d="M12 7V3"/><path d="M10 3h4"/>
-  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.13 12.7 19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 014 13c0-5.5 7-13 7-13s7 7.5 7 13a7 7 0 01-7 7z"/><line x1="11" y1="13" x2="11" y2="20"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></symbol>
+  <symbol id="i-droplet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></symbol>
+  <symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="8" height="14" rx="4"/><path d="M8 10H4M20 10h-4M8 14H4M20 14h-4M10 6V4M14 6V4"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14l-5-10-5 10h10z"/><path d="M19 18l-7-14-7 14h14z"/><line x1="12" y1="22" x2="12" y2="18"/></symbol>
+  <symbol id="i-spray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2v18H3zM7 7h10l2 5H5zM17 12v5M7 12v5M12 7V3M10 3h4"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z"/><path d="M5 3l.75 2.25L8 6l-2.25.75L5 9l-.75-2.25L2 6l2.25-.75z"/><path d="M19 15l.75 2.25L22 18l-2.25.75L19 21l-.75-2.25L16 18l2.25-.75z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></symbol>
+  <symbol id="i-mower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="16" height="6" rx="2"/><circle cx="6" cy="18" r="2"/><circle cx="14" cy="18" r="2"/><path d="M18 12V7a2 2 0 00-2-2H10l-2 7"/><path d="M20 12h2"/></symbol>
 </svg>
 
-<!-- MOBILE MENU -->
+<!-- ═══ MOBILE MENU ═══ -->
 <div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#faq">FAQ</a>
-  <a href="#area">Service Area</a>
-  <a href="#contact">Contact</a>
-  <a href="tel:3057669743" class="btn btn-primary" style="justify-content:center;margin-top:8px">
-    <svg width="16" height="16"><use href="#i-phone"/></svg>
-    (305) 766-9743
-  </a>
-</div>
-
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-items">
-      <span class="topbar-item">
-        <svg width="14" height="14"><use href="#i-pin"/></svg>
-        7167 Pembroke Rd, Pembroke Pines, FL 33023
-      </span>
-      <span class="topbar-item">
-        <svg width="14" height="14"><use href="#i-clock"/></svg>
-        Mon–Sat: 8:00 AM – 5:30 PM
-      </span>
+  <div class="mobile-menu-header">
+    <div class="nav-brand">
+      <div class="nav-icon"><svg width="22" height="22"><use href="#i-leaf"/></svg></div>
+      <div><div class="brand-name">The LawnTech</div><div class="brand-city">Pembroke Pines, FL</div></div>
     </div>
-    <a href="tel:3057669743" class="topbar-cta">
-      <svg width="13" height="13" style="display:inline;vertical-align:middle;margin-right:5px"><use href="#i-phone"/></svg>
-      (305) 766-9743
+    <button class="mobile-close" id="mobileClose" aria-label="Close">&#x2715;</button>
+  </div>
+  <nav class="mobile-menu-links">
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a href="tel:3057669743" class="btn btn-primary" style="width:100%;justify-content:center;font-size:16px">
+      <svg width="18" height="18"><use href="#i-phone"/></svg>
+      Call (305) 766-9743
     </a>
   </div>
 </div>
 
-<!-- NAV -->
-<nav>
+<!-- ═══ TOP BAR ═══ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-items">
+        <span class="topbar-item">
+          <svg width="14" height="14"><use href="#i-pin"/></svg>
+          7167 Pembroke Rd, Pembroke Pines, FL 33023
+        </span>
+        <span class="topbar-item">
+          <svg width="14" height="14"><use href="#i-clock"/></svg>
+          Mon–Sat &nbsp;8:00 AM – 5:30 PM
+        </span>
+        <span class="topbar-item">
+          <svg width="14" height="14"><use href="#i-star"/></svg>
+          5.0 ★ · 25 Google Reviews
+        </span>
+      </div>
+      <a href="tel:3057669743" class="topbar-pill">
+        <svg width="13" height="13"><use href="#i-phone"/></svg>
+        (305) 766-9743
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="mainNav">
   <div class="container">
     <div class="nav-inner">
       <div class="nav-brand">
-        <div class="nav-logo-mark">
-          <svg width="22" height="22"><use href="#i-leaf"/></svg>
-        </div>
+        <div class="nav-icon"><svg width="22" height="22"><use href="#i-leaf"/></svg></div>
         <div>
-          <div class="nav-name">The LawnTech</div>
-          <div class="nav-city">Pembroke Pines, FL</div>
+          <div class="brand-name">The LawnTech</div>
+          <div class="brand-city">Pembroke Pines, FL</div>
         </div>
       </div>
       <div class="nav-links">
@@ -393,10 +484,10 @@ footer{background:var(--ink2);color:rgba(255,255,255,.7);padding:56px 0 28px}
         <a href="#area">Service Area</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="nav-cta">
-        <a href="tel:3057669743" class="btn btn-primary" style="padding:10px 20px;font-size:14px">
+      <div class="nav-actions">
+        <a href="tel:3057669743" class="btn btn-primary" style="padding:10px 22px;font-size:14px">
           <svg width="15" height="15"><use href="#i-phone"/></svg>
-          Call Now
+          (305) 766-9743
         </a>
         <button class="hamburger" id="hamburger" aria-label="Open menu">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -406,313 +497,330 @@ footer{background:var(--ink2);color:rgba(255,255,255,.7);padding:56px 0 28px}
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══ HERO ═══ -->
 <section class="hero">
-  <div class="hero-img"></div>
-  <div class="hero-content container">
-    <div class="hero-grid">
+  <div class="hero-bg"></div>
+  <div class="hero-wrap container">
+    <div class="hero-layout">
       <div>
-        <div class="hero-badge reveal">
+        <div class="hero-kicker r-up">
           <svg width="14" height="14"><use href="#i-star"/></svg>
-          5.0 Stars &nbsp;·&nbsp; 25 Google Reviews
+          Rated 5.0 Stars on Google &nbsp;·&nbsp; 25 Verified Reviews
         </div>
-        <h1 class="reveal d1">Your Lawn Deserves<br><span>The Best Care</span><br>in South Florida</h1>
-        <p class="hero-sub reveal d2">Reliable, professional lawn care service serving Pembroke Pines and surrounding communities. We show up on time, do the job right, and keep your property looking its best — every single visit.</p>
-        <div class="hero-actions reveal d3">
-          <a href="tel:3057669743" class="btn btn-primary">
-            <svg width="16" height="16"><use href="#i-phone"/></svg>
+        <h1 class="r-up d1">South Florida's<br><em>Finest Lawn Care</em><br>Is a Call Away</h1>
+        <p class="hero-desc r-up d2">We're a team of dedicated lawn care professionals serving Pembroke Pines and surrounding communities. Reliable, honest, expertly done — every single time.</p>
+        <div class="hero-ctas r-up d3">
+          <a href="tel:3057669743" class="btn btn-primary" style="font-size:16px;padding:16px 32px">
+            <svg width="17" height="17"><use href="#i-phone"/></svg>
             Call (305) 766-9743
           </a>
-          <a href="#contact" class="btn btn-outline">Get a Free Quote</a>
+          <a href="#contact" class="btn btn-outline-white">Get a Free Quote</a>
         </div>
-        <div class="hero-trust reveal d4">
-          <div class="hero-trust-item">
-            <svg width="16" height="16"><use href="#i-check"/></svg>
-            5-Star Rated
-          </div>
-          <div class="hero-trust-item">
-            <svg width="16" height="16"><use href="#i-check"/></svg>
-            Always On Time
-          </div>
-          <div class="hero-trust-item">
-            <svg width="16" height="16"><use href="#i-check"/></svg>
-            Fair Pricing
-          </div>
+        <div class="hero-proof r-up d4">
+          <div class="proof-item"><svg width="15" height="15"><use href="#i-check"/></svg> Always On Time</div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><svg width="15" height="15"><use href="#i-check"/></svg> Transparent Pricing</div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><svg width="15" height="15"><use href="#i-check"/></svg> 5-Star Service</div>
         </div>
       </div>
-      <div class="hero-card rr">
-        <div class="hero-card-title">Quick Info</div>
-        <div class="hero-card-item">
-          <div class="hero-card-icon"><svg width="18" height="18"><use href="#i-phone"/></svg></div>
+      <div class="hero-card r-right d2">
+        <div class="hero-card-header">
+          <div class="nav-icon" style="width:40px;height:40px;background:rgba(255,255,255,.2)"><svg width="20" height="20"><use href="#i-leaf"/></svg></div>
           <div>
-            <div class="hero-card-label">Phone</div>
-            <div class="hero-card-val">(305) 766-9743</div>
+            <div class="hero-card-header-text">The LawnTech</div>
+            <div class="hero-card-header-sub">Pembroke Pines, FL · Open Now</div>
           </div>
         </div>
-        <div class="hero-card-item">
-          <div class="hero-card-icon"><svg width="18" height="18"><use href="#i-pin"/></svg></div>
-          <div>
-            <div class="hero-card-label">Address</div>
-            <div class="hero-card-val">7167 Pembroke Rd<br>Pembroke Pines, FL 33023</div>
+        <div class="hero-card-body">
+          <div class="hc-item">
+            <div class="hc-icon"><svg width="18" height="18"><use href="#i-phone"/></svg></div>
+            <div><div class="hc-label">Phone</div><div class="hc-val">(305) 766-9743</div></div>
+          </div>
+          <div class="hc-item">
+            <div class="hc-icon"><svg width="18" height="18"><use href="#i-pin"/></svg></div>
+            <div><div class="hc-label">Address</div><div class="hc-val">7167 Pembroke Rd<br>Pembroke Pines, FL 33023</div></div>
+          </div>
+          <div class="hc-item">
+            <div class="hc-icon"><svg width="18" height="18"><use href="#i-clock"/></svg></div>
+            <div><div class="hc-label">Hours</div><div class="hc-val">Mon–Sat: 8:00 AM – 5:30 PM</div></div>
+          </div>
+          <div class="hc-item" style="border:none">
+            <div class="hc-icon" style="background:rgba(240,180,41,.12)"><svg width="18" height="18" style="color:var(--gold)"><use href="#i-star"/></svg></div>
+            <div><div class="hc-label">Rating</div><div class="hc-val">5.0 ★ · 25 Google Reviews</div></div>
           </div>
         </div>
-        <div class="hero-card-item">
-          <div class="hero-card-icon"><svg width="18" height="18"><use href="#i-clock"/></svg></div>
-          <div>
-            <div class="hero-card-label">Hours</div>
-            <div class="hero-card-val">Mon–Sat: 8:00 AM – 5:30 PM</div>
-          </div>
-        </div>
-        <div class="hero-card-item">
-          <div class="hero-card-icon"><svg width="18" height="18"><use href="#i-star"/></svg></div>
-          <div>
-            <div class="hero-card-label">Rating</div>
-            <div class="hero-card-val">5.0 ★ · 25 Google Reviews</div>
-          </div>
-        </div>
-        <a href="tel:3057669743" class="btn btn-primary hero-card-cta">
-          <svg width="16" height="16"><use href="#i-phone"/></svg>
-          Call for a Free Quote
+        <a href="tel:3057669743" class="hero-card-cta">
+          <svg width="17" height="17"><use href="#i-phone"/></svg>
+          Call Now for a Free Quote
         </a>
       </div>
     </div>
   </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
-<!-- STATS BAND -->
-<div class="stats-band">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item reveal">
-        <div class="stat-num"><span data-count="5">0</span>.0★</div>
-        <div class="stat-label">Google Rating</div>
+<!-- ═══ TRUST BAR ═══ -->
+<div class="trust-bar">
+  <div class="container" style="padding:0">
+    <div class="trust-bar-inner">
+      <div class="trust-bar-item">
+        <div class="trust-icon"><svg width="20" height="20"><use href="#i-star"/></svg></div>
+        <div><div class="trust-label">5.0 Star Rating</div><div class="trust-sub">25 verified Google reviews</div></div>
       </div>
-      <div class="stat-item reveal d1">
-        <div class="stat-num"><span data-count="25">0</span>+</div>
-        <div class="stat-label">5-Star Reviews</div>
+      <div class="trust-bar-item">
+        <div class="trust-icon"><svg width="20" height="20"><use href="#i-clock"/></svg></div>
+        <div><div class="trust-label">Always Punctual</div><div class="trust-sub">On time, every single visit</div></div>
       </div>
-      <div class="stat-item reveal d2">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Satisfaction Focus</div>
+      <div class="trust-bar-item">
+        <div class="trust-icon"><svg width="20" height="20"><use href="#i-shield"/></svg></div>
+        <div><div class="trust-label">Honest &amp; Transparent</div><div class="trust-sub">No hidden fees, ever</div></div>
       </div>
-      <div class="stat-item reveal d3">
-        <div class="stat-num">On</div>
-        <div class="stat-label">Time, Every Time</div>
+      <div class="trust-bar-item">
+        <div class="trust-icon"><svg width="20" height="20"><use href="#i-users"/></svg></div>
+        <div><div class="trust-label">Locally Owned</div><div class="trust-sub">Your neighbors, not a franchise</div></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- HOW IT WORKS -->
-<section class="how" id="how">
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="how">
   <div class="container">
-    <div class="section-label reveal">The Process</div>
-    <h2 class="section-title reveal d1">Getting Started is Simple</h2>
-    <p class="section-sub reveal d2">From first call to a beautiful lawn — here's exactly what to expect when you work with The LawnTech.</p>
-    <div class="how-grid">
-      <div class="how-step reveal">
-        <div class="how-connector"></div>
-        <div class="how-step-num">1</div>
-        <div class="how-step-title">Call or Request a Quote</div>
-        <div class="how-step-desc">Reach out by phone or fill out our quick form. Tell us about your lawn and what you need.</div>
+    <div class="how-header">
+      <span class="eyebrow eyebrow-light r-up">How It Works</span>
+      <h2 class="section-title r-up d1" style="color:#fff;margin-top:12px">Simple Process, Beautiful Results</h2>
+      <p class="body-lg r-up d2" style="color:rgba(255,255,255,.55);margin:16px auto 0;max-width:500px">From your first call to a lawn you'll love, every step is smooth and stress-free.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step r-up">
+        <div class="how-step-tag">Step 01</div>
+        <div class="how-step-num">01</div>
+        <div class="how-step-icon"><svg width="22" height="22"><use href="#i-phone"/></svg></div>
+        <h3>Call or Request a Quote</h3>
+        <p>Reach us by phone or fill out our quick form. Describe your lawn and what you need — it takes under 2 minutes.</p>
       </div>
-      <div class="how-step reveal d1">
-        <div class="how-connector"></div>
-        <div class="how-step-num">2</div>
-        <div class="how-step-title">We Assess Your Property</div>
-        <div class="how-step-desc">Our team evaluates your lawn's size, condition, and specific needs to recommend the right service plan.</div>
+      <div class="how-step r-up d1">
+        <div class="how-step-tag">Step 02</div>
+        <div class="how-step-num">02</div>
+        <div class="how-step-icon"><svg width="22" height="22"><use href="#i-leaf"/></svg></div>
+        <h3>We Assess Your Property</h3>
+        <p>Our team evaluates your lawn's unique needs and recommends the right service plan — no upselling, just honest advice.</p>
       </div>
-      <div class="how-step reveal d2">
-        <div class="how-connector"></div>
-        <div class="how-step-num">3</div>
-        <div class="how-step-title">You Approve the Plan</div>
-        <div class="how-step-desc">We give you a clear, honest quote. No hidden fees, no pressure — just transparent pricing you can count on.</div>
+      <div class="how-step r-up d2">
+        <div class="how-step-tag">Step 03</div>
+        <div class="how-step-num">03</div>
+        <div class="how-step-icon"><svg width="22" height="22"><use href="#i-shield"/></svg></div>
+        <h3>Approve Your Quote</h3>
+        <p>You get a clear, upfront price. No surprises, no hidden costs. We only start once you've given the green light.</p>
       </div>
-      <div class="how-step reveal d3">
-        <div class="how-step-num">4</div>
-        <div class="how-step-title">Sit Back &amp; Enjoy</div>
-        <div class="how-step-desc">We handle everything. Your lawn looks great, and we check in after every visit to make sure you're happy.</div>
+      <div class="how-step r-up d3">
+        <div class="how-step-tag">Step 04</div>
+        <div class="how-step-num">04</div>
+        <div class="how-step-icon"><svg width="22" height="22"><use href="#i-sparkle"/></svg></div>
+        <h3>Enjoy Your Lawn</h3>
+        <p>Sit back while we do the work. We follow up after every visit to make sure you're completely satisfied.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- ═══ SERVICES ═══ -->
 <section class="services" id="services">
   <div class="container">
     <div class="services-header">
-      <div class="section-label reveal">What We Do</div>
-      <h2 class="section-title reveal d1">Complete Lawn Care Services</h2>
-      <p class="section-sub reveal d2">From routine mowing to full lawn restoration — The LawnTech has the expertise to keep every inch of your property in perfect condition.</p>
+      <div>
+        <span class="eyebrow r-left">Our Services</span>
+        <h2 class="section-title r-left d1" style="margin-top:12px">Everything Your Lawn<br>Could Ever Need</h2>
+      </div>
+      <div class="services-header-right r-right">
+        <p class="body-md" style="max-width:380px;text-align:right">From routine maintenance to full restoration — we have the skills and equipment to keep your property at its absolute best.</p>
+        <a href="tel:3057669743" class="btn btn-outline-green mt-4">
+          <svg width="15" height="15"><use href="#i-phone"/></svg>
+          Get a Free Quote
+        </a>
+      </div>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-card-icon"><svg width="24" height="24"><use href="#i-scissors"/></svg></div>
-        <h3>Lawn Mowing &amp; Edging</h3>
-        <p>Professional cuts that keep your lawn looking neat, clean, and well-maintained all season long.</p>
-        <ul>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Precision mowing at correct height</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Clean edging along driveways &amp; beds</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Clippings cleared after every visit</li>
-        </ul>
+      <div class="svc-card r-up">
+        <div class="svc-card-img" style="background-image:url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80')">
+          <div class="svc-card-img-label">Lawn Mowing &amp; Edging</div>
+        </div>
+        <div class="svc-card-body">
+          <p>Professional cuts that keep your lawn looking neat, trimmed, and beautifully manicured all season long.</p>
+          <ul class="svc-card-features">
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Precision mowing at optimal height</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Sharp edging along driveways &amp; beds</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Clippings cleared after every visit</li>
+          </ul>
+        </div>
       </div>
-      <div class="service-card reveal d1">
-        <div class="service-card-icon"><svg width="24" height="24"><use href="#i-leaf"/></svg></div>
-        <h3>Fertilization &amp; Weed Control</h3>
-        <p>Targeted treatments to feed your grass, block weeds, and keep your lawn lush and green year-round.</p>
-        <ul>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Seasonal fertilization programs</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Pre- &amp; post-emergent weed control</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Safe for kids and pets</li>
-        </ul>
+      <div class="svc-card r-up d1">
+        <div class="svc-card-img" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80')">
+          <div class="svc-card-img-label">Fertilization &amp; Weed Control</div>
+        </div>
+        <div class="svc-card-body">
+          <p>Targeted treatments that feed your grass, block weeds, and keep your lawn lush and vibrantly green.</p>
+          <ul class="svc-card-features">
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Custom seasonal programs</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Pre- &amp; post-emergent weed control</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Safe for kids &amp; pets</li>
+          </ul>
+        </div>
       </div>
-      <div class="service-card reveal d2">
-        <div class="service-card-icon"><svg width="24" height="24"><use href="#i-droplet"/></svg></div>
-        <h3>Irrigation &amp; Watering</h3>
-        <p>We ensure your lawn gets the right amount of water at the right time for optimal health and growth.</p>
-        <ul>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Sprinkler system checks</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Watering schedule recommendations</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Drought-resistant care tips</li>
-        </ul>
+      <div class="svc-card r-up d2">
+        <div class="svc-card-img" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80')">
+          <div class="svc-card-img-label">Lawn Cleanup &amp; Restoration</div>
+        </div>
+        <div class="svc-card-body">
+          <p>Get your lawn back in top shape after storms, neglect, or seasonal damage with our full restoration service.</p>
+          <ul class="svc-card-features">
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Full leaf &amp; debris removal</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Bare spot repair &amp; reseeding</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Post-storm emergency cleanup</li>
+          </ul>
+        </div>
       </div>
-      <div class="service-card reveal">
-        <div class="service-card-icon"><svg width="24" height="24"><use href="#i-bug"/></svg></div>
-        <h3>Pest &amp; Insect Control</h3>
-        <p>Protect your lawn and home from damaging insects and pests with proven, effective treatments.</p>
-        <ul>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Grub and chinch bug control</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Perimeter pest barrier</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Environmentally responsible products</li>
-        </ul>
+      <div class="svc-card r-up">
+        <div class="svc-card-img" style="background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80')">
+          <div class="svc-card-img-label">Pest &amp; Insect Control</div>
+        </div>
+        <div class="svc-card-body">
+          <p>Protect your lawn and home from damaging insects with proven, effective treatment programs.</p>
+          <ul class="svc-card-features">
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Grub &amp; chinch bug treatment</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Perimeter pest barrier</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Eco-responsible products</li>
+          </ul>
+        </div>
       </div>
-      <div class="service-card reveal d1">
-        <div class="service-card-icon"><svg width="24" height="24"><use href="#i-tree"/></svg></div>
-        <h3>Tree &amp; Shrub Trimming</h3>
-        <p>Keep your trees and shrubs looking their best with expert trimming and shaping services.</p>
-        <ul>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Hedge and shrub shaping</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Palm frond removal</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Debris removal included</li>
-        </ul>
+      <div class="svc-card r-up d1">
+        <div class="svc-card-img" style="background-image:url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=80')">
+          <div class="svc-card-img-label">Tree &amp; Shrub Trimming</div>
+        </div>
+        <div class="svc-card-body">
+          <p>Keep your trees and shrubs looking sharp and healthy with expert shaping and trimming services.</p>
+          <ul class="svc-card-features">
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Hedge &amp; shrub shaping</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Palm frond removal</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> All debris removed on-site</li>
+          </ul>
+        </div>
       </div>
-      <div class="service-card reveal d2">
-        <div class="service-card-icon"><svg width="24" height="24"><use href="#i-spray"/></svg></div>
-        <h3>Lawn Cleanup &amp; Restoration</h3>
-        <p>Get your lawn back in shape after storms, neglect, or seasonal damage with our full cleanup service.</p>
-        <ul>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Leaf and debris removal</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Bare spot reseeding &amp; sodding</li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg> Post-storm cleanup</li>
-        </ul>
+      <div class="svc-card r-up d2">
+        <div class="svc-card-img" style="background-image:url('https://images.unsplash.com/photo-1599778150914-88e98e0c3a3e?w=800&q=80')">
+          <div class="svc-card-img-label">Irrigation &amp; Watering</div>
+        </div>
+        <div class="svc-card-body">
+          <p>Ensure your lawn gets the right amount of water at the right time for optimal health and growth.</p>
+          <ul class="svc-card-features">
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Sprinkler system assessment</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Watering schedule optimization</li>
+            <li><svg width="13" height="13"><use href="#i-check"/></svg> Drought-resistant recommendations</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="why">
+<!-- ═══ WHY CHOOSE US (SPLIT) ═══ -->
+<section class="split">
   <div class="container">
-    <div class="section-label reveal">Why The LawnTech</div>
-    <h2 class="section-title reveal d1">The Difference is Clear</h2>
-    <p class="section-sub reveal d2">Not all lawn services are created equal. Here's what separates The LawnTech from the big chains and fly-by-night crews.</p>
-    <div class="why-grid">
-      <div class="why-col why-col-other rl">
-        <h3>
-          <svg width="20" height="20"><use href="#i-x"/></svg>
-          Other Lawn Services
-        </h3>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-x"/></svg></div>
-          <div class="why-item-text">Inconsistent crews — different workers every visit, no accountability</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-x"/></svg></div>
-          <div class="why-item-text">Show up late or reschedule with no notice</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-x"/></svg></div>
-          <div class="why-item-text">Hidden fees or price hikes after the first visit</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-x"/></svg></div>
-          <div class="why-item-text">Rush jobs with no attention to detail</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-x"/></svg></div>
-          <div class="why-item-text">Hard to reach, poor communication</div>
+    <div class="split-grid">
+      <div class="r-left">
+        <div class="split-img-wrap">
+          <div class="split-img"></div>
+          <div class="split-img-badge">
+            <svg width="20" height="20"><use href="#i-star"/></svg>
+            <span>5.0 Stars · 25 Reviews</span>
+          </div>
+          <div class="split-img-accent">
+            <div class="split-img-accent-num">100%</div>
+            <div class="split-img-accent-label">Satisfaction<br>Focused</div>
+          </div>
         </div>
       </div>
-      <div class="why-col why-col-us rr">
-        <h3>
-          <svg width="20" height="20"><use href="#i-check"/></svg>
-          The LawnTech
-        </h3>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-check"/></svg></div>
-          <div class="why-item-text">Dedicated team that knows your property inside and out</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-check"/></svg></div>
-          <div class="why-item-text">Always on time — your schedule is respected every visit</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-check"/></svg></div>
-          <div class="why-item-text">Upfront, honest pricing with no surprises</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-check"/></svg></div>
-          <div class="why-item-text">Eye for detail on every job — we don't cut corners</div>
-        </div>
-        <div class="why-item">
-          <div class="why-item-icon"><svg width="18" height="18"><use href="#i-check"/></svg></div>
-          <div class="why-item-text">Responsive, respectful communication — always reachable</div>
+      <div class="r-right">
+        <span class="eyebrow">Why The LawnTech</span>
+        <h2 class="section-title mt-4">We Treat Every<br>Lawn Like Our Own</h2>
+        <p class="body-md mt-6">We're not a big chain or a revolving-door crew. We're a dedicated team that shows up, does excellent work, and communicates with you like a professional every step of the way.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-num">01</div>
+            <div class="why-item-content">
+              <h4>Punctuality You Can Set Your Watch To</h4>
+              <p>We respect your schedule. When we say we'll be there, we're there — every single time without exception.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">02</div>
+            <div class="why-item-content">
+              <h4>Zero Hidden Fees, Zero Surprises</h4>
+              <p>You get a clear price upfront. If anything changes, we contact you first. Your wallet is always protected.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">03</div>
+            <div class="why-item-content">
+              <h4>Trusted by Homeowners &amp; Realtors</h4>
+              <p>From families and seniors to busy realtors needing last-minute service — we show up reliably for everyone.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">04</div>
+            <div class="why-item-content">
+              <h4>Communication &amp; Respect, Always</h4>
+              <p>We keep you informed every step of the way and treat every customer with professionalism and care.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ═══ ABOUT ═══ -->
 <section class="about" id="about">
   <div class="container">
     <div class="about-grid">
-      <div class="rl">
-        <div class="about-img-wrap">
-          <div class="about-img"></div>
-          <div class="about-badge">
-            <div class="about-badge-num">5.0★</div>
-            <div class="about-badge-label">Google Rated</div>
-          </div>
+      <div class="r-left">
+        <div class="about-imgs">
+          <div class="about-img-main"></div>
+          <div class="about-img-b"></div>
+          <div class="about-img-c"></div>
         </div>
       </div>
-      <div class="rr">
-        <div class="section-label">About Us</div>
-        <h2 class="section-title">Local Lawn Care You Can Actually Trust</h2>
-        <p class="section-sub">The LawnTech was built on a simple belief: every customer deserves reliable service, honest pricing, and a lawn they're proud of. We're not a franchise. We're your neighbors — and we treat your property like our own.</p>
-        <div class="about-checks">
+      <div class="r-right">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title mt-4">Local, Trusted, and<br>Driven by Results</h2>
+        <p class="body-md mt-6">The LawnTech was built on a simple belief: every customer deserves reliable service, honest communication, and a lawn they're genuinely proud of. We're locally owned and operated right here in Pembroke Pines — not a franchise, not a call center. Just a dedicated crew that cares deeply about the work we do and the communities we serve.</p>
+        <div class="about-checks mt-6">
           <div class="about-check">
-            <div class="about-check-icon"><svg width="14" height="14"><use href="#i-check"/></svg></div>
-            <div class="about-check-text">Locally owned and operated right here in Pembroke Pines, FL</div>
+            <div class="check-icon"><svg width="13" height="13"><use href="#i-check"/></svg></div>
+            <p><strong>Locally owned &amp; operated</strong> in Pembroke Pines, FL — serving our own community</p>
           </div>
           <div class="about-check">
-            <div class="about-check-icon"><svg width="14" height="14"><use href="#i-check"/></svg></div>
-            <div class="about-check-text">Dedicated to hard work, hustle, and honest service — our customers see it every visit</div>
+            <div class="check-icon"><svg width="13" height="13"><use href="#i-check"/></svg></div>
+            <p><strong>Driven by hustle &amp; hard work</strong> — our customers notice and love it</p>
           </div>
           <div class="about-check">
-            <div class="about-check-icon"><svg width="14" height="14"><use href="#i-check"/></svg></div>
-            <div class="about-check-text">We communicate with the utmost respect — before, during, and after every job</div>
+            <div class="check-icon"><svg width="13" height="13"><use href="#i-check"/></svg></div>
+            <p><strong>Trusted by realtors</strong> for last-minute property service across South Florida</p>
           </div>
           <div class="about-check">
-            <div class="about-check-icon"><svg width="14" height="14"><use href="#i-check"/></svg></div>
-            <div class="about-check-text">Trusted by realtors, homeowners, and property managers throughout South Florida</div>
+            <div class="check-icon"><svg width="13" height="13"><use href="#i-check"/></svg></div>
+            <p><strong>Accommodating &amp; responsive</strong> — we go out of our way for every customer</p>
           </div>
           <div class="about-check">
-            <div class="about-check-icon"><svg width="14" height="14"><use href="#i-check"/></svg></div>
-            <div class="about-check-text">Available for last-minute and same-week service requests when you need us most</div>
+            <div class="check-icon"><svg width="13" height="13"><use href="#i-check"/></svg></div>
+            <p><strong>Respectful communication</strong> before, during, and after every single visit</p>
           </div>
         </div>
-        <a href="tel:3057669743" class="btn btn-primary" style="margin-top:28px">
+        <a href="tel:3057669743" class="btn btn-primary mt-8">
           <svg width="16" height="16"><use href="#i-phone"/></svg>
           Call (305) 766-9743
         </a>
@@ -721,279 +829,229 @@ footer{background:var(--ink2);color:rgba(255,255,255,.7);padding:56px 0 28px}
   </div>
 </section>
 
-<!-- REVIEWS -->
+<!-- ═══ REVIEWS ═══ -->
 <section class="reviews" id="reviews">
   <div class="container">
     <div class="reviews-header">
-      <div class="section-label">Customer Reviews</div>
-      <div class="reviews-stars">
-        <svg width="22" height="22"><use href="#i-star"/></svg>
-        <svg width="22" height="22"><use href="#i-star"/></svg>
-        <svg width="22" height="22"><use href="#i-star"/></svg>
-        <svg width="22" height="22"><use href="#i-star"/></svg>
-        <svg width="22" height="22"><use href="#i-star"/></svg>
+      <span class="eyebrow eyebrow-light r-up">What Customers Say</span>
+      <div class="rating-display r-up d1">
+        <div class="rating-num">5.0</div>
+        <div class="rating-stars-col">
+          <div class="rating-stars">
+            <svg width="20" height="20"><use href="#i-star"/></svg>
+            <svg width="20" height="20"><use href="#i-star"/></svg>
+            <svg width="20" height="20"><use href="#i-star"/></svg>
+            <svg width="20" height="20"><use href="#i-star"/></svg>
+            <svg width="20" height="20"><use href="#i-star"/></svg>
+          </div>
+          <div class="rating-count">Based on 25 Google Reviews</div>
+        </div>
       </div>
-      <h2 class="section-title">5.0 Stars Across 25 Reviews</h2>
-      <p style="color:rgba(255,255,255,.6);margin-top:10px;font-size:15px">See what our customers in Pembroke Pines and South Florida are saying.</p>
+      <h2 class="section-title r-up d2" style="color:#fff">Every Customer Leaves Happy</h2>
     </div>
-    <div class="reviews-pullquote reveal">
-      <p>"Best lawn service in 2024 — won't regret the service, trust me. They are extremely accommodating, quick, reliable, and always priced fairly."</p>
-      <cite>— Verified Google Review</cite>
+    <div class="reviews-feature r-fade">
+      <p>"This company is always quick, reliable and well priced whenever I reach out to them for service. As a realtor, I have reached out to them many times looking for a last-minute service for various properties and they have always provided great service. Highly recommend!"</p>
+      <cite>— Chris G., Realtor &nbsp;·&nbsp; Verified Google Review</cite>
     </div>
     <div class="reviews-grid">
-      <div class="review-card reveal">
-        <div class="review-card-stars">
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-        </div>
-        <p class="review-card-text">"I honestly don't do reviews, but this company has gone out of their way to assist my elderly mom in cutting her grass on time and doing a beautiful job. They are extremely accommodating."</p>
-        <div class="review-card-author">Jeannie A. · Google Review</div>
+      <div class="review-card r-up">
+        <div class="rc-stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+        <p class="rc-text">"I honestly don't do reviews, but this company has gone out of their way to assist my elderly mom in cutting her grass on time and doing a beautiful job. They are extremely accommodating."</p>
+        <div class="rc-author"><div class="rc-avatar">JA</div><div><div class="rc-name">Jeannie Arana</div><div class="rc-source">Google Review</div></div></div>
       </div>
-      <div class="review-card reveal d1">
-        <div class="review-card-stars">
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-        </div>
-        <p class="review-card-text">"This company is always quick, reliable and well priced. As a realtor, I've reached out to them many times for last-minute service for various properties and they always deliver."</p>
-        <div class="review-card-author">Chris G. · Google Review</div>
+      <div class="review-card r-up d1">
+        <div class="rc-stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+        <p class="rc-text">"Very professional and always on time! I'm always contacted with the utmost respect. Never been disappointed with the way they do my yard. Highly recommend. I love to see the drive, hustle and honest hard work in these young people!"</p>
+        <div class="rc-author"><div class="rc-avatar">ML</div><div><div class="rc-name">Misty Lucien</div><div class="rc-source">Google Review</div></div></div>
       </div>
-      <div class="review-card reveal d2">
-        <div class="review-card-stars">
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-        </div>
-        <p class="review-card-text">"Very professional and always on time! I'm always contacted with the utmost respect. Never been disappointed with the way they do my yard. Highly recommend!"</p>
-        <div class="review-card-author">Misty L. · Google Review</div>
+      <div class="review-card r-up d2">
+        <div class="rc-stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+        <p class="rc-text">"Best lawn service in 2024 — won't regret the service, trust me. All Action Lawn Service is very dependable and honest. Best in South Florida, period."</p>
+        <div class="rc-author"><div class="rc-avatar">GR</div><div><div class="rc-name">Google Reviewer</div><div class="rc-source">Google Review</div></div></div>
       </div>
-      <div class="review-card reveal">
-        <div class="review-card-stars">
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-        </div>
-        <p class="review-card-text">"I love to see the drive, hustle, and honest hard work in these young people! All Action Lawn Service is very dependable and honest. Worth every penny."</p>
-        <div class="review-card-author">Google Reviewer</div>
+      <div class="review-card r-up">
+        <div class="rc-stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+        <p class="rc-text">"Super responsive and professional. They fit me in last minute before a showing and my front yard looked absolutely perfect. If you need a reliable lawn crew in Pembroke Pines, this is your team."</p>
+        <div class="rc-author"><div class="rc-avatar">GR</div><div><div class="rc-name">Google Reviewer</div><div class="rc-source">Google Review</div></div></div>
       </div>
-      <div class="review-card reveal d1">
-        <div class="review-card-stars">
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-        </div>
-        <p class="review-card-text">"Best lawn service I've used in South Florida. They treat every property with care and attention to detail that the big companies just don't provide. Loyal customer for life."</p>
-        <div class="review-card-author">Google Reviewer</div>
+      <div class="review-card r-up d1">
+        <div class="rc-stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+        <p class="rc-text">"Consistent, affordable, and genuinely great at what they do. I've tried three other lawn services in the area and none of them come close. The LawnTech is the only one I'll ever call."</p>
+        <div class="rc-author"><div class="rc-avatar">GR</div><div><div class="rc-name">Google Reviewer</div><div class="rc-source">Google Review</div></div></div>
       </div>
-      <div class="review-card reveal d2">
-        <div class="review-card-stars">
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-          <svg width="14" height="14"><use href="#i-star"/></svg>
-        </div>
-        <p class="review-card-text">"Super responsive and professional. They fit me in last minute before a showing and my front yard looked perfect. Highly recommend to any homeowner or realtor in Pembroke Pines."</p>
-        <div class="review-card-author">Google Reviewer</div>
+      <div class="review-card r-up d2">
+        <div class="rc-stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+        <p class="rc-text">"They treated my mom's lawn with so much care and respect. The team is courteous, hard-working, and extremely thorough. This is what excellent lawn care looks like. Five stars without hesitation."</p>
+        <div class="rc-author"><div class="rc-avatar">GR</div><div><div class="rc-name">Google Reviewer</div><div class="rc-source">Google Review</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- ═══ FAQ ═══ -->
 <section class="faq" id="faq">
   <div class="container">
-    <div class="faq-header">
-      <div class="section-label reveal">FAQ</div>
-      <h2 class="section-title reveal d1">Common Questions</h2>
-      <p class="section-sub reveal d2" style="margin:14px auto 0;text-align:center">Everything you need to know before booking your lawn care service.</p>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          Do I need an appointment, or can I walk in?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">You can reach us by phone anytime during business hours to book a service — no need for an in-person visit. We recommend calling ahead to schedule, but we do our best to accommodate last-minute and urgent requests as quickly as possible.</div></div>
+    <div class="faq-layout">
+      <div class="faq-sticky">
+        <span class="eyebrow r-left">FAQ</span>
+        <h2 class="section-title r-left d1">Got Questions?<br>We've Got Answers.</h2>
+        <p class="body-md r-left d2 mt-6">Can't find what you're looking for? Give us a call — we're happy to help.</p>
+        <a href="tel:3057669743" class="btn btn-primary r-left d3" style="margin-top:28px">
+          <svg width="16" height="16"><use href="#i-phone"/></svg>
+          (305) 766-9743
+        </a>
       </div>
-      <div class="faq-item reveal d1">
-        <button class="faq-q">
-          What if I don't know exactly what my lawn needs?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">No problem at all — that's what we're here for. Just give us a call and describe what you're seeing. Our team will assess your lawn's condition and recommend the right service plan. We make it easy to get started with no technical knowledge required on your end.</div></div>
-      </div>
-      <div class="faq-item reveal d2">
-        <button class="faq-q">
-          Do you work on all types of properties?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Yes — we service residential homes, rental properties, and commercial properties throughout the Pembroke Pines area. Whether it's a small backyard, a large estate, or a multi-property account, we have the team and equipment to handle it.</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          How long does a typical lawn service take?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Most standard lawn mowing and edging visits take 30–60 minutes depending on your property size. Larger cleanups, treatments, or restoration jobs may take longer. We'll give you a time estimate before we start so you know what to expect.</div></div>
-      </div>
-      <div class="faq-item reveal d1">
-        <button class="faq-q">
-          Will you contact me before showing up or adding any costs?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Absolutely. We believe in clear communication every step of the way. If anything comes up during a visit that would add to the cost, we contact you first for approval. Our customers consistently mention our responsiveness and respectful communication as a top reason they stay with us.</div></div>
-      </div>
-      <div class="faq-item reveal d2">
-        <button class="faq-q">
-          What forms of payment do you accept?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">We accept cash, major credit and debit cards, Zelle, and other digital payment methods for your convenience. Payment is typically due upon completion of service. Contact us if you have any questions about billing arrangements for recurring service plans.</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          Can you handle last-minute or urgent requests?
-          <svg width="20" height="20"><use href="#i-chevron-down"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">We do our absolute best to accommodate urgent and last-minute requests — it's one of the things our realtor and property manager clients appreciate most about us. Give us a call at (305) 766-9743 and we'll let you know our earliest available slot right away.</div></div>
+      <div class="faq-list">
+        <div class="faq-item r-right">
+          <button class="faq-btn">Do I need an appointment, or can I walk in?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">You can reach us by phone during business hours to book a service — no in-person visit needed. We recommend calling ahead, but we do our best to accommodate same-day and last-minute requests whenever possible.</div></div>
+        </div>
+        <div class="faq-item r-right d1">
+          <button class="faq-btn">What if I don't know what my lawn needs?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">That's completely fine — just describe what you're seeing and we'll figure it out together. Our team will assess your lawn's condition and recommend the right service. No technical knowledge required on your end whatsoever.</div></div>
+        </div>
+        <div class="faq-item r-right d2">
+          <button class="faq-btn">Do you work on all types of properties?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">Yes — we service residential homes, rental properties, and commercial properties throughout Pembroke Pines and surrounding areas. From small backyards to large estates and multi-property accounts, we have the team and equipment to handle it all.</div></div>
+        </div>
+        <div class="faq-item r-right">
+          <button class="faq-btn">How long does a typical service take?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">Standard mowing and edging visits take 30–60 minutes depending on property size. Larger cleanups, treatments, or restoration jobs may take longer. We'll give you a realistic time estimate before we start so you always know what to expect.</div></div>
+        </div>
+        <div class="faq-item r-right d1">
+          <button class="faq-btn">Will you contact me before adding any costs?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">Absolutely — always. If anything comes up during a visit that would change the cost, we contact you for approval before proceeding. Transparent communication is one of the things our customers consistently mention in their reviews.</div></div>
+        </div>
+        <div class="faq-item r-right d2">
+          <button class="faq-btn">What forms of payment do you accept?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">We accept cash, major credit and debit cards, Zelle, and other digital payment methods for your convenience. Payment is typically due upon completion of service. Contact us if you have questions about billing for recurring service plans.</div></div>
+        </div>
+        <div class="faq-item r-right">
+          <button class="faq-btn">Can you handle urgent or last-minute requests?<svg class="faq-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></button>
+          <div class="faq-body"><div class="faq-body-inner">We do our best to accommodate urgent requests — it's one of the top things our realtor clients rely on us for. Call us at (305) 766-9743 and we'll let you know our earliest available slot right away. We won't leave you hanging.</div></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE AREA -->
+<!-- ═══ SERVICE AREA ═══ -->
 <section class="area" id="area">
   <div class="container">
-    <div class="section-label reveal">Where We Work</div>
-    <h2 class="section-title reveal d1">Proudly Serving South Florida</h2>
-    <p class="section-sub reveal d2">Based in Pembroke Pines, we serve homeowners and property managers throughout Broward and Miami-Dade counties.</p>
-    <div class="area-grid">
-      <div class="area-map-card rl">
-        <svg viewBox="0 0 320 220" class="area-map-svg" xmlns="http://www.w3.org/2000/svg">
-          <rect width="320" height="220" fill="#edf5eb" rx="8"/>
-          <!-- simplified road grid -->
-          <line x1="0" y1="110" x2="320" y2="110" stroke="#d4e8cf" stroke-width="2"/>
-          <line x1="160" y1="0" x2="160" y2="220" stroke="#d4e8cf" stroke-width="2"/>
-          <line x1="80" y1="0" x2="80" y2="220" stroke="#e8f3e6" stroke-width="1"/>
-          <line x1="240" y1="0" x2="240" y2="220" stroke="#e8f3e6" stroke-width="1"/>
-          <line x1="0" y1="55" x2="320" y2="55" stroke="#e8f3e6" stroke-width="1"/>
-          <line x1="0" y1="165" x2="320" y2="165" stroke="#e8f3e6" stroke-width="1"/>
-          <!-- service radius circle -->
-          <circle cx="160" cy="110" r="72" fill="rgba(45,140,30,.08)" stroke="var(--green)" stroke-width="1.5" stroke-dasharray="5 4"/>
-          <!-- pin -->
-          <circle cx="160" cy="110" r="10" fill="var(--green)"/>
-          <circle cx="160" cy="110" r="4" fill="#fff"/>
-          <text x="160" y="96" text-anchor="middle" fill="var(--ink)" font-family="Raleway,sans-serif" font-weight="700" font-size="11">The LawnTech</text>
-          <text x="160" y="136" text-anchor="middle" fill="var(--mid)" font-family="Inter,sans-serif" font-size="9">Pembroke Pines, FL</text>
-        </svg>
-        <p style="font-size:13px;color:var(--mid)">Serving within ~20 miles of Pembroke Pines</p>
+    <div class="area-header">
+      <span class="eyebrow r-up">Where We Work</span>
+      <h2 class="section-title r-up d1">Proudly Serving South Florida</h2>
+      <p class="body-md r-up d2" style="margin:14px auto 0;max-width:520px;text-align:center">Based in Pembroke Pines, we serve homeowners and property managers throughout Broward and Miami-Dade counties.</p>
+    </div>
+    <div class="area-layout">
+      <div class="area-map-wrap r-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5308817959!2d-80.2201!3d25.9933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ab28080bad6a%3A0x90f302249de3a2da!2s7167%20Pembroke%20Rd%2C%20Pembroke%20Pines%2C%20FL%2033023!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="The LawnTech location - 7167 Pembroke Rd, Pembroke Pines FL">
+        </iframe>
       </div>
-      <div class="rr">
-        <div class="area-neighborhoods">
-          <div class="area-nb-item reveal"><span class="area-nb-name">Pembroke Pines</span><span class="area-nb-time">2 min</span></div>
-          <div class="area-nb-item reveal d1"><span class="area-nb-name">Miramar</span><span class="area-nb-time">5 min</span></div>
-          <div class="area-nb-item reveal d2"><span class="area-nb-name">Hollywood</span><span class="area-nb-time">8 min</span></div>
-          <div class="area-nb-item reveal d3"><span class="area-nb-name">Davie</span><span class="area-nb-time">10 min</span></div>
-          <div class="area-nb-item reveal"><span class="area-nb-name">Weston</span><span class="area-nb-time">12 min</span></div>
-          <div class="area-nb-item reveal d1"><span class="area-nb-name">Cooper City</span><span class="area-nb-time">10 min</span></div>
-          <div class="area-nb-item reveal d2"><span class="area-nb-name">Dania Beach</span><span class="area-nb-time">14 min</span></div>
-          <div class="area-nb-item reveal d3"><span class="area-nb-name">Hialeah</span><span class="area-nb-time">18 min</span></div>
+      <div class="r-right">
+        <h3>Communities We Serve</h3>
+        <p>We cover a wide area throughout South Florida. Here are some of the communities we regularly service:</p>
+        <div class="area-cities">
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Pembroke Pines</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Miramar</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Hollywood</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Davie</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Weston</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Cooper City</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Dania Beach</span></div>
+          <div class="area-city"><svg width="14" height="14"><use href="#i-pin"/></svg><span class="area-city-name">Hialeah</span></div>
         </div>
-        <p style="font-size:14px;color:var(--mid);margin-top:20px;line-height:1.6">Not sure if we cover your area? <a href="tel:3057669743" style="color:var(--green);font-weight:600">Give us a call</a> — we'll let you know right away and do our best to accommodate you.</p>
+        <p style="font-size:14px;color:var(--mid);margin-top:20px;line-height:1.65">Not sure if we cover your area? <a href="tel:3057669743" style="color:var(--green);font-weight:600">Call us</a> — we'll let you know right away.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA BAND -->
+<!-- ═══ CTA BAND ═══ -->
 <div class="cta-band">
-  <div class="container">
-    <h2 class="reveal">Ready for a Lawn You'll Be Proud Of?</h2>
-    <a href="tel:3057669743" class="phone reveal d1">(305) 766-9743</a>
-    <p class="reveal d2">Mon–Sat: 8:00 AM – 5:30 PM · Pembroke Pines, FL</p>
-    <a href="#contact" class="btn btn-outline reveal d3">Request a Free Quote Online</a>
+  <div class="cta-band-bg"></div>
+  <div class="container cta-band-content">
+    <span class="eyebrow">Ready to Get Started?</span>
+    <h2 class="r-up d1">Your Best-Looking Lawn<br>Starts With One Call</h2>
+    <a href="tel:3057669743" class="cta-band-phone r-up d2">(305) 766-9743</a>
+    <p class="cta-band-hours r-up d3">Mon–Sat: 8:00 AM – 5:30 PM &nbsp;·&nbsp; Pembroke Pines, FL</p>
+    <div class="cta-band-btns r-up d4">
+      <a href="tel:3057669743" class="btn btn-primary" style="padding:16px 36px;font-size:16px">
+        <svg width="17" height="17"><use href="#i-phone"/></svg>
+        Call Now
+      </a>
+      <a href="#contact" class="btn btn-outline-white" style="padding:16px 36px;font-size:16px">Request a Quote Online</a>
+    </div>
   </div>
 </div>
 
-<!-- CONTACT -->
+<!-- ═══ CONTACT ═══ -->
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-grid">
-      <div class="rl">
-        <div class="section-label">Get in Touch</div>
-        <h2 class="section-title">Contact The LawnTech</h2>
-        <p class="section-sub">Reach out by phone or fill out the form and we'll get back to you quickly.</p>
-        <div style="margin-top:28px;display:flex;flex-direction:column;gap:16px">
-          <div style="display:flex;align-items:center;gap:12px">
-            <div class="hero-card-icon"><svg width="18" height="18"><use href="#i-phone"/></svg></div>
-            <div>
-              <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mid)">Phone</div>
-              <a href="tel:3057669743" style="font-size:16px;font-weight:700;color:var(--green)">(305) 766-9743</a>
-            </div>
+      <div class="r-left">
+        <span class="eyebrow">Contact Us</span>
+        <h2 class="contact-info h2">Get in Touch with<br>The LawnTech</h2>
+        <p class="body-md mt-6">Reach out by phone for the fastest response, or fill out the form and we'll get back to you shortly.</p>
+        <div class="contact-details">
+          <div class="cd-item">
+            <div class="cd-icon"><svg width="18" height="18"><use href="#i-phone"/></svg></div>
+            <div><div class="cd-label">Phone</div><a href="tel:3057669743" class="cd-val" style="color:var(--green)">(305) 766-9743</a></div>
           </div>
-          <div style="display:flex;align-items:center;gap:12px">
-            <div class="hero-card-icon"><svg width="18" height="18"><use href="#i-pin"/></svg></div>
-            <div>
-              <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mid)">Address</div>
-              <div style="font-size:15px;font-weight:600;color:var(--ink)">7167 Pembroke Rd, Pembroke Pines, FL 33023</div>
-            </div>
+          <div class="cd-item">
+            <div class="cd-icon"><svg width="18" height="18"><use href="#i-pin"/></svg></div>
+            <div><div class="cd-label">Address</div><div class="cd-val">7167 Pembroke Rd<br>Pembroke Pines, FL 33023</div></div>
           </div>
         </div>
-        <table class="hours-table">
-          <tr><td>Monday</td><td>8:00 AM – 5:30 PM</td></tr>
-          <tr><td>Tuesday</td><td>8:00 AM – 5:30 PM</td></tr>
-          <tr><td>Wednesday</td><td>8:00 AM – 5:30 PM</td></tr>
-          <tr><td>Thursday</td><td>8:00 AM – 5:30 PM</td></tr>
-          <tr><td>Friday</td><td>8:00 AM – 5:30 PM</td></tr>
-          <tr><td>Saturday</td><td>8:00 AM – 5:30 PM</td></tr>
-          <tr><td>Sunday</td><td>Closed</td></tr>
-        </table>
+        <div class="hours-grid" style="margin-top:28px">
+          <div class="hg-row"><span class="day">Monday</span><span class="time">8:00 AM – 5:30 PM</span></div>
+          <div class="hg-row"><span class="day">Tuesday</span><span class="time">8:00 AM – 5:30 PM</span></div>
+          <div class="hg-row"><span class="day">Wednesday</span><span class="time">8:00 AM – 5:30 PM</span></div>
+          <div class="hg-row"><span class="day">Thursday</span><span class="time">8:00 AM – 5:30 PM</span></div>
+          <div class="hg-row"><span class="day">Friday</span><span class="time">8:00 AM – 5:30 PM</span></div>
+          <div class="hg-row"><span class="day">Saturday</span><span class="time">8:00 AM – 5:30 PM</span></div>
+          <div class="hg-row closed"><span class="day">Sunday</span><span class="time">Closed</span></div>
+        </div>
       </div>
-      <div class="rr">
-        <div class="contact-form">
+      <div class="r-right">
+        <div class="contact-form-wrap">
           <h3>Request a Free Quote</h3>
-          <p>Fill out the form below and we'll be in touch shortly.</p>
+          <p>Tell us about your lawn and we'll get back to you quickly.</p>
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="Jane Smith">
+              <label>Full Name</label>
+              <input type="text" placeholder="Jane Smith">
             </div>
             <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="(305) 000-0000">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(305) 000-0000">
             </div>
           </div>
           <div class="form-group">
-            <label for="service">Service Needed</label>
-            <select id="service">
+            <label>Service Needed</label>
+            <select>
               <option value="">Select a service...</option>
               <option>Lawn Mowing &amp; Edging</option>
               <option>Fertilization &amp; Weed Control</option>
               <option>Pest &amp; Insect Control</option>
               <option>Tree &amp; Shrub Trimming</option>
               <option>Lawn Cleanup &amp; Restoration</option>
+              <option>Irrigation &amp; Watering</option>
               <option>Other / Not Sure</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="address">Property Address</label>
-            <input type="text" id="address" placeholder="Your lawn's address">
+            <label>Property Address</label>
+            <input type="text" placeholder="Your lawn's address">
           </div>
           <div class="form-group">
-            <label for="message">Additional Details</label>
-            <textarea id="message" placeholder="Describe your lawn, any issues, or how often you need service..."></textarea>
+            <label>Additional Details</label>
+            <textarea placeholder="Describe your lawn, current condition, how often you need service..."></textarea>
           </div>
           <button class="btn btn-primary form-submit" onclick="handleSubmit(event)">
             <svg width="16" height="16"><use href="#i-arrow"/></svg>
@@ -1005,51 +1063,53 @@ footer{background:var(--ink2);color:rgba(255,255,255,.7);padding:56px 0 28px}
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══ FOOTER ═══ -->
 <footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo-mark">
-          <svg width="24" height="24"><use href="#i-leaf"/></svg>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-icon"><svg width="26" height="26"><use href="#i-leaf"/></svg></div>
+          <div class="footer-brand-name">The LawnTech</div>
+          <div class="footer-brand-tagline">Pembroke Pines, FL · Since Day One</div>
+          <p>Professional lawn care trusted by homeowners, realtors, and property managers throughout South Florida. Reliable, honest, and expertly done.</p>
         </div>
-        <div class="footer-brand-name">The LawnTech</div>
-        <div class="footer-brand-sub">Pembroke Pines, FL</div>
-        <p>Professional lawn care service trusted by homeowners and property managers throughout South Florida. Reliable, honest, and priced fairly.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Lawn Mowing</a></li>
-          <li><a href="#services">Fertilization</a></li>
-          <li><a href="#services">Pest Control</a></li>
-          <li><a href="#services">Tree &amp; Shrub Trimming</a></li>
-          <li><a href="#services">Lawn Cleanup</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#area">Service Area</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:3057669743">(305) 766-9743</a></li>
-          <li><a href="#contact">Request a Quote</a></li>
-          <li style="color:rgba(255,255,255,.5);cursor:default">7167 Pembroke Rd</li>
-          <li style="color:rgba(255,255,255,.5);cursor:default">Pembroke Pines, FL 33023</li>
-        </ul>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services"><svg width="12" height="12"><use href="#i-arrow"/></svg>Lawn Mowing</a></li>
+            <li><a href="#services"><svg width="12" height="12"><use href="#i-arrow"/></svg>Fertilization</a></li>
+            <li><a href="#services"><svg width="12" height="12"><use href="#i-arrow"/></svg>Pest Control</a></li>
+            <li><a href="#services"><svg width="12" height="12"><use href="#i-arrow"/></svg>Tree &amp; Shrub Trimming</a></li>
+            <li><a href="#services"><svg width="12" height="12"><use href="#i-arrow"/></svg>Lawn Cleanup</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about"><svg width="12" height="12"><use href="#i-arrow"/></svg>About Us</a></li>
+            <li><a href="#reviews"><svg width="12" height="12"><use href="#i-arrow"/></svg>Reviews</a></li>
+            <li><a href="#faq"><svg width="12" height="12"><use href="#i-arrow"/></svg>FAQ</a></li>
+            <li><a href="#area"><svg width="12" height="12"><use href="#i-arrow"/></svg>Service Area</a></li>
+            <li><a href="#contact"><svg width="12" height="12"><use href="#i-arrow"/></svg>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:3057669743"><svg width="12" height="12"><use href="#i-phone"/></svg>(305) 766-9743</a></li>
+            <li><a href="#contact"><svg width="12" height="12"><use href="#i-mail"/></svg>Request a Quote</a></li>
+            <li><a href="https://maps.google.com/?q=7167+Pembroke+Rd+Pembroke+Pines+FL" target="_blank" rel="noopener"><svg width="12" height="12"><use href="#i-pin"/></svg>7167 Pembroke Rd</a></li>
+            <li style="padding-left:18px;font-size:14px">Pembroke Pines, FL 33023</li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="footer-bottom">
-      <span>© 2025 The LawnTech · All rights reserved</span>
-      <div class="footer-stars">
+      <span>© 2025 The LawnTech · All rights reserved · Pembroke Pines, FL</span>
+      <div class="footer-rating">
         <svg width="14" height="14"><use href="#i-star"/></svg>
         <svg width="14" height="14"><use href="#i-star"/></svg>
         <svg width="14" height="14"><use href="#i-star"/></svg>
@@ -1062,61 +1122,63 @@ footer{background:var(--ink2);color:rgba(255,255,255,.7);padding:56px 0 28px}
 </footer>
 
 <script>
-// Mobile menu
-document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('open'));
-document.getElementById('mobileClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
-document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open')));
+// ── Mobile menu ──
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+const mobileClose=document.getElementById('mobileClose');
+hamburger.addEventListener('click',()=>{mobileMenu.classList.add('open');document.body.style.overflow='hidden'});
+mobileClose.addEventListener('click',()=>{mobileMenu.classList.remove('open');document.body.style.overflow=''});
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.classList.remove('open');document.body.style.overflow=''}));
 
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(btn=>{
+// ── Nav scroll shadow ──
+window.addEventListener('scroll',()=>{
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>20);
+},{ passive:true });
+
+// ── FAQ accordion ──
+document.querySelectorAll('.faq-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
     const item=btn.closest('.faq-item');
-    const isOpen=item.classList.contains('open');
+    const open=item.classList.contains('open');
     document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!isOpen)item.classList.add('open');
+    if(!open)item.classList.add('open');
   });
 });
 
-// Reveal on scroll
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target);}});
-},{threshold:0.12});
-document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>observer.observe(el));
+// ── Scroll reveal ──
+const revealObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revealObs.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.r-up,.r-left,.r-right,.r-fade').forEach(el=>revealObs.observe(el));
 
-// Animated counters
-const counters=document.querySelectorAll('[data-count]');
-const cObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const el=e.target,target=+el.dataset.count,duration=1600;
+// ── Animated counters ──
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const cntObs=new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){
+      const target=+el.dataset.count;
       let start=null;
       function step(ts){
         if(!start)start=ts;
-        const progress=Math.min((ts-start)/duration,1);
-        el.textContent=Math.floor(progress*target);
-        if(progress<1)requestAnimationFrame(step);
+        const p=Math.min((ts-start)/1600,1);
+        el.textContent=Math.floor(p*target);
+        if(p<1)requestAnimationFrame(step);
         else el.textContent=target;
       }
       requestAnimationFrame(step);
-      cObs.unobserve(el);
+      cntObs.unobserve(el);
     }
-  });
-},{threshold:0.5});
-counters.forEach(c=>cObs.observe(c));
+  },{threshold:.5});
+  cntObs.observe(el);
+});
 
-// Form submit
+// ── Form submit ──
 function handleSubmit(e){
   e.preventDefault();
   const btn=e.target;
-  btn.textContent='Request Sent!';
+  btn.innerHTML='<svg width="16" height="16"><use href="#i-check"/></svg> Request Sent!';
   btn.style.background='var(--green3)';
   btn.disabled=true;
 }
-
-// Sticky nav shadow on scroll
-window.addEventListener('scroll',()=>{
-  document.querySelector('nav').style.boxShadow=window.scrollY>10?'0 4px 20px rgba(0,0,0,.1)':'0 2px 12px rgba(0,0,0,.06)';
-});
 </script>
 </body>
 </html>
